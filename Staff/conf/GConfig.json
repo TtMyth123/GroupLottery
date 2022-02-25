@@ -1,0 +1,8 @@
+
+{
+  "BasePicRootPath": "http://127.0.0.1:9113",
+  "SavePicRootPath": "static/chat",
+  "SavePicPath": "chatFile",
+  "SavePicRootPath1": "/usr/local/nginx/html/chatFile",
+  "Area": "ZGGame"
+}

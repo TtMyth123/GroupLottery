@@ -1,0 +1,2 @@
+https://www.playnow.com/services2/keno/nextdraw/?_=1626359935536
+{"drawDate":"2021-07-15T07:49:00.000","timeSinceDraw":20337,"draw":2735932,"bonus":2,"num":[31,36,9,64,53,19,2,32,59,6,47,62,17,28,7,71,27,45,11,66],"nextKenoDraw":"00:03:10","nextKenoDrawTime":190}

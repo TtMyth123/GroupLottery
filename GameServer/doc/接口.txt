@@ -1,0 +1,52 @@
+登录(不可用)
+http://127.0.0.1:9100/reglogin/login?jsonData={"UserName":"aa","Pwd":"aa","VisitorId":0,"IsVisitor":0}
+
+注册(不可用)
+http://127.0.0.1:9100/reglogin/reg?jsonData={"UserName":"aa","Pwd":"aa","Code":123456}
+
+ 
+登出(不可用)
+http://127.0.0.1:9100/reglogin/logout?jsonData={"GameType":202,"UserId":20003}
+
+断线(不可用)
+http://127.0.0.1:9100/reglogin/lostconnection?jsonData={"GameType":202,"UserId":20003}
+
+getcurresult
+GetCurResult 当前结果
+http://127.0.0.1:9100/api/gethistoryresultlist?jsonData={"GameType":202}
+
+GetHistoryResultList 历史开奖结果
+http://127.0.0.1:9100/api/gethistoryresultlist?jsonData={"GameType":202,"PageIndex":1,"PageSize":10}
+
+GetRoomInfo 房间赔率
+http://127.0.0.1:9100/api/getroominfo?jsonData={"GameType":202}
+
+Bet 投注
+http://127.0.0.1:9100/api/bet?jsonData={"GameType":202,"GroupId":1,"UserId":20003,"StrLotteryNum":"20200811","BetData":[{"OddsType":60,"M":10, "OddsName":"平码两位区", Nums:"32,03"}]}
+
+
+
+# GetBetRecordList 获取投注记录 Status:0:全部，1：未兑奖，2：已兑奖
+http://127.0.0.1:9100/api/getbetrecordlist?jsonData={"GroupId":1,"UserId":20003,"StrBeginDay":"2020-07-01","StrEndDay":"2022-01-01","Status":0, "PageIndex":1,"PageSize":1000}
+
+#获取投注订单
+http://127.0.0.1:9100/api/getbetorder?jsonData={"BetOrder":"3c12bba180c5d17742e0e258dc86af4e"}
+
+#GetUserInfo 用户基本信息(不可用)
+http://127.0.0.1:9100/api/getuserinfo?jsonData={"GroupId":1,"UserId":1001}
+
+#GetJuniorUserInfo 我的下线(不可用)
+http://127.0.0.1:9100/api/getjunioruserinfo?jsonData={"GroupId":1,"UserId":1,"PageIndex":1,"PageSize":10}
+
+# GetGameNames 获取游戏名信息
+http://127.0.0.1:9100/api/getgamenames?jsonData={}
+
+# GetArticleList 公告列表
+http://127.0.0.1:9100/api/getarticlelist?jsonData={"ArticleType":1,"PageIndex":1,"PageSize":10}
+
+# GetServiceInfo 客服信息
+http://127.0.0.1:9100/api/getserviceinfo?jsonData={}
+
+# 修改密码
+# modifypwd 客服信息(不可用)
+http://127.0.0.1:9100/api/modifypwd?jsonData={"GroupId":1,"UserId":100001,"OldPwd":"a","NewPwd":"bb"}

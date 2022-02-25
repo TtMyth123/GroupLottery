@@ -1,0 +1,5 @@
+{
+  "IsDev": false,
+  "CApiBaseP": "http://18.167.19.53:9100",
+  "SApiBaseP": "http://18.167.19.53:9120"
+}

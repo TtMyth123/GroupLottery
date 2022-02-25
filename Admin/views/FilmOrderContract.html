@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目投资合同书</title>
+</head>
+<body class="body-box">
+
+<div>
+    <h1 class="head-box">项目投资合同书</h1>
+    合同编号：{{.ContractNo}}<br>
+    甲方：{{.Party}}<br>
+    乙方：{{.PartyB}}<br>
+    甲乙双方经友好协商，本着互利互惠、真诚合作的原则，根据《中华人民共和国合同法》等有关法律、法规，就项目投资相关事宜，经友好协商，达成如下合同条款，以资双方共同遵守。
+</div>
+<div>
+    <h2  class="title-box">第一条：乙方投资项目</h2>
+    <table class="table-box">
+        <tr>
+            <td>项目名称</td>
+            <td>返还方式</td>
+            <td>投资金额</td>
+            <td>分红周期</td>
+            <td>分红时长</td>
+            <td>每{{.TimeType}}分红</td>
+            <td>总计收入（含本金）</td>
+        </tr>
+        <tr>
+            <td>{{.FilmName}}</td>
+            <td>{{.SettlementModesName}}</td>
+            <td>{{.StrBuyGold}}</td>
+            <td>{{.StrCycleRange}}</td>
+            <td>{{.StrCycleLen}}</td>
+            <td>{{.StrDailyRebate}}</td>
+            <td>{{.StrSumYield}}</td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h2 class="title-box">第二条：投资、分红及亏</h2>
+    1、乙方投资{{.StrBuyGold}}整购买甲方项目版权，投资项目：《{{.FilmName}}》<br>
+    2、甲方应当在每个分红周期届满之日起至{{.StrBeginTime}}内按照本合同约定分红额度将本周期分红足额支付至乙方。<br>
+    3、本合同预定的分钟周期届满之日起至{{.StrEndTime}}内，甲方按照本合同约定将乙方投资款足额返还至乙方。<br>
+    4、本项目亏损由甲方承担，乙方不承担本项目亏损及风险。<br>
+</div>
+
+<div>
+    <h2 class="title-box">第三条：该项目经营管理事项</h2>
+    1、	该项目由甲方负责全权运营，甲方负责处理该项目运营过程中的一切事物；<br>
+    2、	该项目独立核算，与甲方其他业务收支分离；<br>
+    3、	未经甲方另行书面授权，乙方不得以任何理由、任何形式干预该项目运营，不得以任何理由、任何形式干涉甲方独立管理该项目事宜。<br>
+</div>
+
+<div>
+    <h2 class="title-box">第四条：禁止行为</h2>
+    1、乙方不得从事损害甲方及该项目利益的活动，否则甲方有权终止该协议，收回乙方分红权并不予支付乙方任何投资款、补偿款<br>
+    2、未经甲乙双方协商一致并签订书面协议，乙方不得向任何第三方转让、出售、赠与该项目分红权利。<br>
+</div>
+
+<div>
+    <h2 class="title-box">第五条：撤资</h2>
+    本合同签订后，乙方不得以任何理由、任何形式向甲方提出撤资。如向甲方提出撤资的，本协议解除，甲方收回分红权，并不予向乙方退还任何投资款及补偿款，甲乙双方权利义务终止。
+</div>
+<div>
+    <h2 class="title-box">第六条：不可抗力</h2>
+    1、签订本合同前，甲乙双方均已明确了解该项目投资有风险，本项目可能不会盈利，因此甲乙双方不可撤回的承诺：无论项目盈利或亏损，甲方均应当依照本合同约定向乙方支付分红，并在到期时足额返还乙方投资款。<br>
+    2、该项目在运营过程中，因战争、地震或政府禁令等不可抗力原因导致该项目无法继续运营的，甲乙双方投资关系解除，甲方无息退还乙方投资款，双方互不负违约责任。<br>
+</div>
+<div>
+    <h2 class="title-box">第七条：违约责任</h2>
+    如甲方未依照合同约定向乙方支付分红款或在投资期满未按时返还乙方投资款的，逾期按照月收益百分之二向乙方加付违约金。如逾期三个周期仍未支付违约金，乙方可起诉甲方，要求甲方一次性返还投资款、分红款并支付违约金。<br>
+</div>
+<div>
+    <h2 class="title-box">第八条：纠纷的解决</h2>
+    凡因履行本合同发生的争议，甲乙双方应友好协商解决，如协商不成，任何一方有权向甲方所在地人民法院起诉。<br>
+</div>
+<div>
+    <h2 class="title-box">第九条：其他</h2>
+    1、本合同自双方签章且乙方实缴投资款之日起生效。<br>
+    2、本合同一式两份，甲乙双方各执一份，具有同等法律效力。<br>
+    3、本合同以在线方式签订的，电子件视为合同原件<br>
+</div>
+<div>
+    <br>
+    【以下无正文】
+    <br><br><br><br><br><br>
+    <table class="table-footer-box" border="0">
+        <tr class="tr-box">
+            <td class="td-box">甲方：{{.Party}}
+                <br>
+            </td>
+            <td class="td-box">乙方：</td>
+        </tr>
+        <tr  class="tr-box">
+            <td class="td-box">签约日期：</td>
+            <td class="td-box">身份证号码：</td>
+        </tr>
+        <tr  class="tr-box">
+            <td class="td-box"></td>
+            <td class="td-box">签约日期：</td>
+        </tr>
+    </table>
+</div>
+</body>
+<style >
+    .body-box{
+        background-color: #FFFFFF;
+        margin: 40px;
+    }
+    .head-box {
+        font-family: 微软雅黑;
+        text-align: center;
+        /*font-size: 40px;*/
+        margin-bottom: 20px;
+    }
+    .title-box {
+        font-family: 微软雅黑;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .table-box{
+        margin:2px;
+        font-size: 12px;
+    }
+    table{
+        border-spacing:0;
+    }
+    td, th{
+        text-align: center;
+        padding: 2px;
+        border: 1px solid black;
+    }
+    .tr-box{
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    .td-box{
+        text-align:left;
+        padding: 2px;
+        border: 0px solid black;
+    }
+    .table-footer-box{
+        width:100%;
+        border:0px;
+    }
+</style>
+</html>

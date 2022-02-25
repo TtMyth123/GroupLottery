@@ -1,0 +1,38 @@
+{
+  "Lang":"",
+  "Langs": {
+    "En": {
+      "1000": "Quản lý quyền hạn",
+      "1001": "Danh sách người dùng hẹ thống",
+      "1100": "新加坡28赔率",
+      "1200": "Tổng lịch sử đặt cược",
+      "1300": "新加坡28开奖结果",
+      "2000": "Quản lý tài chính",
+      "2001": "Quản lý xin phép nạp tiền",
+      "2002": "Quản lý xin phép rút tiền",
+      "2003": "Danh sách nạp tiền",
+      "2004": "Danh sách rút tiền",
+      "2005": "Kiểm tra điểm đặt cược vào",
+      "2007": "Cài đặt hoa Hồng",
+      "2008": "Hoa Hồng đặt cược",
+      "3000": "Quản lý người dùng",
+      "3001": "Danh sách người dùng",
+      "11000": "Cài đặt số nhân",
+      "11001": "Số nhân hồ chí minh VIP",
+      "11002": "Số nhân miền Bắc",
+      "11003": "Số nhân keno",
+      "11004": "北京28赔率",
+      "11005": "加拿大28赔率",
+      "11006": "新加坡28赔率",
+      "12000": "Báo cáo",
+      "12001": "Tổng lịch sử đặt cược",
+      "13000": "Kết quả mở thưởng",
+      "13001": "kết quả mở thưởng hồ chí minh VIP",
+      "13002": "Kết quả mở thưởng miền Bắc",
+      "13003": "Kết quả mở thưởng keno",
+      "13004": "加拿大28开奖结果",
+      "13005": "北京28开奖结果",
+      "13006": "新加坡28开奖结果"
+    }
+  }
+}

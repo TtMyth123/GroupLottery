@@ -1,0 +1,10 @@
+{
+  "IsDev": true,
+  "RegDrawMoneyPwd": true,
+  "CApiBaseP": "http://47.244.125.83:9000",
+  "SApiBaseP": "http://47.244.125.83:9001",
+  "IsI18n": true,
+  "BasePicRootPath":"http://127.0.0.1:9113",
+  "TimeLag": 0,
+  "ChatArea": "ZGGame"
+}

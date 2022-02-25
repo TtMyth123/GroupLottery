@@ -1,0 +1,19 @@
+Id        int
+	FilmName  string `orm:"size(256)"` //中文名
+	FilmNameE string `orm:"size(256)"` //英文名
+	FilmNameO string `orm:"size(256)"` //其它译名
+
+	BulletFilms       string `orm:"size(256)"`  //出品公司
+	Geffen            string `orm:"size(256)"`  //发行公司
+	ProductionAreas   string `orm:"size(256)"`  //制片地区
+	FilmCost          string `orm:"size(256)"`  //制片成本
+	Director          string `orm:"size(256)"`  //导    演
+	Producer          string `orm:"size(256)"`  //制 片 人
+	KBS               string `orm:"size(256)"`  //主    演
+	FeatureFilm       string `orm:"size(256)"`  //片    长
+	ReleaseDate       string `orm:"size(256)"`  //上映时间
+	FilmSynopsisTitle string `orm:"size(5120)"` //剧情简介标题
+	FilmSynopsis      string `orm:"size(5120)"` //剧情简介
+	UpdatedUrl       string `orm:"size(512)"`  //宣传图 标题照片
+	StillsUrl       string `orm:"size(512)"`  //剧照
+	FilmVideoUrl      string `orm:"size(512)"`  //宣传片

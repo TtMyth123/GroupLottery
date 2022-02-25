@@ -1,0 +1,23 @@
+#（上分）充值申请
+http://127.0.0.1:9100/api/applysavemoney?jsonData={"GroupId":1,"UserId":1001,"Score":1000}
+
+#UploadSaveMoneyVoucher 上传支付凭证
+http://127.0.0.1:9100/api/uploadsavemoneyvoucher?jsonData={"GroupId":1,"UserId":1001,"SaveMoneyId":1,"State":4,"VoucherUrl":"aaa"}
+
+#ApplyDrawMoney 提现申请
+http://127.0.0.1:9100/api/applydrawmoney?jsonData={"GroupId":1,"UserId":1001,"Score":1000,"Pwd":""}
+
+#DelSaveMoney 删除充值(上分)申请
+http://127.0.0.1:9100/api/delsavemoney?jsonData={"GroupId":1,"UserId":1001,"SaveMoneyId":1}
+
+#DelDrawMoney 删除提现(下分)申请
+http://127.0.0.1:9100/api/deldrawmoney?jsonData={"GroupId":1,"UserId":1001,"DrawMoneyId":1}
+
+#GetDrawSaveMoneyList 获取上下分列表
+http://127.0.0.1:9100/api/getdrawsavemoneylist?jsonData={"GroupId":1,"UserId":1001,"PageIndex":1,"PageSize":10}
+
+#设置提现密码
+http://127.0.0.1:9100/api/setdrawmoneypwd?jsonData={"GroupId":1,"UserId":101,"NewPwd":"aa","OldPwd":"bb"}
+
+提佣金
+http://47.244.125.83:9100/api/rebate2gold?jsonData= {"GroupId":1,"UserId":10001,"Score":100}
