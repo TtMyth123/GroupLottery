@@ -13,4 +13,4 @@ require (
 	ttmyth123/kit v0.0.0-00010101000000-000000000000
 )
 
-replace ttmyth123/kit => D:\go\gopath\src\ttmyth123\kit
+replace ttmyth123/kit => D:\work\go\WorkSpace\src\ttmyth123\kit
