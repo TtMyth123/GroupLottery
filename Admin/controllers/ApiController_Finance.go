@@ -44,9 +44,10 @@ func (c *ApiController) GetSaveMoneyApplyList() {
 func (c *ApiController) SaveMoney() {
 	UserId, _ := c.GetInt("UserId", 0)
 	Money, _ := c.GetInt("Money", 0)
+	GroupId, _ := c.GetInt("GroupId", 0)
 
 	sysUser := c.CurSysUserEx()
-	e := AFinanceBll.SaveMoney(UserId, Money, sysUser.Id, sysUser.UserName)
+	e := AFinanceBll.SaveMoney(GroupId, UserId, Money, sysUser.Id, sysUser.UserName)
 	if e != nil {
 		c.JsonResult(enums.JRCodeFailed, e.Error(), "")
 	}
