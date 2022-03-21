@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4449ae0a-eec4-43f2-a72b-2e8a05761940" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Lottery_en.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/main_1.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+    <list default="true" id="4449ae0a-eec4-43f2-a72b-2e8a05761940" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/bliudLinux.bat" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/bliudLinux.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gData.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gData.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/OtherServer/httpGameServer/httpGameServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/OtherServer/httpGameServer/httpGameServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/routers/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,36 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RunManager" selected="Go Build.go build ttmyth123/GroupLottery/UserInfoRpc">
+    <configuration name="go build ttmyth123/GroupLottery/Admin" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="ttmyth123/GroupLottery/Admin" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Admin/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build ttmyth123/GroupLottery/UserInfoRpc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$/UserInfoRpc" />
+      <kind value="PACKAGE" />
+      <package value="ttmyth123/GroupLottery/UserInfoRpc" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/UserInfoRpc/main.go" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build ttmyth123/GroupLottery/Admin" />
+      <item itemvalue="Go Build.go build ttmyth123/GroupLottery/UserInfoRpc" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build ttmyth123/GroupLottery/UserInfoRpc" />
+        <item itemvalue="Go Build.go build ttmyth123/GroupLottery/Admin" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,12 +77,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647679496387</updated>
-      <workItem from="1647679497503" duration="187000" />
+      <workItem from="1647679497503" duration="1977000" />
+      <workItem from="1647836220755" duration="1344000" />
+      <workItem from="1647845517700" duration="1423000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1647679764588</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647679764588</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".">
+      <created>1647679809744</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647679809744</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".">
+      <created>1647679945960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647679945960</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -59,5 +131,16 @@
         <entry key="GOPROXY" value="http://goproxy.cn,direct" />
       </map>
     </environment>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/UserInfoRpc/controllers/default.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

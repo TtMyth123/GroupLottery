@@ -18,7 +18,10 @@ var (
 type HttpGameServer struct {
 	baseArrZg   string
 	baseArr     string
+	baseArrUser string
 	mHttpClient *httpClientKit.HttpClient
+
+	mHttpClientGold *httpClientKit.HttpClient
 }
 
 func init() {
@@ -26,7 +29,10 @@ func init() {
 	//http://47.244.125.83:7799
 	mHttp.baseArr = beego.AppConfig.String("HttpGameServerUrl")
 	mHttp.baseArrZg = beego.AppConfig.String("HttpGameServerUrlZg")
+	mHttp.baseArrUser = beego.AppConfig.String("HttpUserServerUrl")
+
 	mHttp.mHttpClient = httpClientKit.GetHttpClient("")
+	mHttp.mHttpClientGold = httpClientKit.GetHttpClient("")
 }
 
 type YHKInfo struct {
@@ -51,6 +57,30 @@ type ResultNewPlayer struct {
 	GameID   int
 	MarketID int
 	UserName string
+}
+
+func AddMoney(RoomID, GameID int, Money float64) (float64, error) {
+	strUrl := fmt.Sprintf(`%s/Interior/AddMoney?RoomID=%d&GameID=%d&Money=%f`, mHttp.baseArrUser, RoomID, GameID, Money)
+	r, e := mHttp.mHttpClientGold.GetBytes(strUrl)
+	if e != nil {
+		return 0, e
+	}
+	//{"Result":false,"Msg":"玩家不存在","Data":null}
+	type TAddM struct {
+		Result bool
+		Msg    string
+		Data   float64
+	}
+	aTAddM := new(TAddM)
+	e = json.Unmarshal(r, aTAddM)
+	if e != nil {
+		return 0, e
+	}
+	if !aTAddM.Result {
+		return 0, fmt.Errorf(aTAddM.Msg)
+	}
+
+	return aTAddM.Data, e
 }
 
 func NewPlayer(Area, UserName string, Psw string, Referrer int) (ResultNewPlayer, error) {

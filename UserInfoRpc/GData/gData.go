@@ -145,9 +145,11 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 		if aUser.User.Gold < goldInfo.Gold {
 			return getUserResult(aUser, errors.New("余额不足"))
 		}
+
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, goldInfo.Gold)
+
 		aUser.User.Gold -= goldInfo.Gold
 		aUser.User.SumBet += goldInfo.Gold
-
 		aUser.User.SumBet = kit.Decimal(aUser.User.SumBet)
 		aUser.User.Gold = kit.Decimal(aUser.User.Gold)
 		aUser.User.Update(nil, "Gold", "SumBet")
