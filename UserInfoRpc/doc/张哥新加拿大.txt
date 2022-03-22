@@ -1,0 +1,15 @@
+GET
+增加玩家余额
+:7866/Interior/AddMoney?GameID=10001&RoomID=0&Money=10
+返回：{"Result":true,"Msg":"","Data":10}
+注释：RoomID若写0，则返回玩家自身余额，若不为0，则返回玩家房间余额。房间模式为3的情况下，才会有房间余额
+
+获得玩家信息
+:7866/Interior/GetPlayerInfo?GameID=10001&RoomID=0
+返回：{"Result":true,"Msg":"","Data":{"Info":{"DownMoney":"0.00","UserName":"15852114646","Token":"","TXImage":"/uploads/tx/10001/1241312.jpg","UpMoney":"0.00","GameID":"10001","NickName":"15852114646","ReferrerID":"10000","Password":"123456","State":"1","admin_id":"1","GamePosName":"","Test":"0","MarketID":"10001","State_text":"State 1","Money":"10","Region":"ZGChat","Test_text":"Test 0"}}}
+注释：RoomID若写0，则返回玩家信息，若不为0，则返回玩家所在房间信息，若玩家不在房间内或房间不存在，则返回null
+
+获得房间信息
+:7866/Interior/GetRoomInfo?RoomID=0
+返回：{"Result":true,"Msg":"","Data":{"Info":{"AdminID":"","RebateNum":"0.00010","RoomType":"0","CTime":"2022-02-23 15:27:08","State":"0","Profit":"0.00","admin_id":1,"id":10000,"RebateState":"0","RoomType_text":"Roomtype 0","State_text":"State 0","PlayerCount":58,"OwnerID":1000,"Money":"0.00","Url":"","RebateState_text":"Rebatestate 0","RoomName":"客服10000"}}}
+注释：若房间不存在，则返回null

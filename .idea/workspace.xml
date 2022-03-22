@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4449ae0a-eec4-43f2-a72b-2e8a05761940" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/UserInfoRpc/doc/张哥新加拿大.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameServer/bliudLinux.bat" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/bliudLinux.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gData.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gData.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInfoRpc/OtherServer/httpGameServer/httpGameServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/OtherServer/httpGameServer/httpGameServer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInfoRpc/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInfoRpc/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInfoRpc/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gData.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/GData/gData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtGameUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtGameUser.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +18,15 @@
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -37,7 +42,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserInfoRpc/doc" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\go\WorkSpace\src\ttmyth123\GroupLottery\UserInfoRpc\doc" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build ttmyth123/GroupLottery/UserInfoRpc">
     <configuration name="go build ttmyth123/GroupLottery/Admin" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -79,7 +90,8 @@
       <updated>1647679496387</updated>
       <workItem from="1647679497503" duration="1977000" />
       <workItem from="1647836220755" duration="1344000" />
-      <workItem from="1647845517700" duration="1423000" />
+      <workItem from="1647845517700" duration="4606000" />
+      <workItem from="1647939030171" duration="533000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1647679764588</created>
@@ -102,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647679945960</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <created>1647847134677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647847134677</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

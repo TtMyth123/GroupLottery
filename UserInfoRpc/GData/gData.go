@@ -146,13 +146,11 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 			return getUserResult(aUser, errors.New("余额不足"))
 		}
 
-		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, goldInfo.Gold)
-
-		aUser.User.Gold -= goldInfo.Gold
-		aUser.User.SumBet += goldInfo.Gold
-		aUser.User.SumBet = kit.Decimal(aUser.User.SumBet)
-		aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-		aUser.User.Update(nil, "Gold", "SumBet")
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, -goldInfo.Gold)
+		if e != nil {
+			return getUserResult(aUser, e)
+		}
+		aUser.User.Gold = f
 
 		if goldInfo.Gold != 0 {
 			aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
@@ -161,39 +159,14 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 			}
 			aTtAccount.Add(nil)
 		}
-	//case mconst.Account_10_SubGuessRebate:
-	//	//下级竞猜佣金(上级)
-	//
-	//	//aUser.User.Gold += goldInfo.Gold
-	//	aUser.User.Rebate += goldInfo.Gold
-	//	aUser.User.SumRebate += goldInfo.Gold
-	//	aUser.User.Update(nil, "Rebate", "SumRebate")
-	//
-	//	aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
-	//		StrType: mconst.GetAccountName(goldInfo.T), Des: goldInfo.Des, CurUserGold: aUser.User.Gold,
-	//		Gold: goldInfo.Gold,Des2:goldInfo.Des2, DesMp: goldInfo.DesMp,
-	//	}
-	//	aTtAccount.Add(nil)
-
-	//case mconst.Account_11_SubGuessRebate:
-	//	//下级竞猜佣金(下级)
-	//	aUser.User.Sum2Rebate += goldInfo.Gold
-	//	aUser.User.Update(nil, "Sum2Rebate")
-
-	//case mconst.Account_12_XmGuess:
-	//	//下级竞猜佣金(下级)
-	//	aUser.User.SumXmBet += goldInfo.Gold
-	//	aUser.User.Update(nil, "SumXmBet")
 
 	case mconst.Account_02_Win:
 		//赢得
-		aUser.User.Gold += goldInfo.Gold
-		aUser.User.SumWin += goldInfo.Gold
-
-		aUser.User.SumWin = kit.Decimal(aUser.User.SumWin)
-		aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-		aUser.User.Update(nil, "Gold", "SumWin")
-
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, goldInfo.Gold)
+		if e != nil {
+			return getUserResult(aUser, e)
+		}
+		aUser.User.Gold = f
 		if goldInfo.Gold != 0 {
 			aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
 				StrType: mconst.GetAccountName(goldInfo.T), Des: goldInfo.Des, CurUserGold: aUser.User.Gold,
@@ -203,9 +176,11 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 		}
 	case mconst.Account_14_NotOpen:
 		//不开奖退款
-		aUser.User.Gold += goldInfo.Gold
-		aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-		aUser.User.Update(nil, "Gold")
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, goldInfo.Gold)
+		if e != nil {
+			return getUserResult(aUser, e)
+		}
+		aUser.User.Gold = f
 
 		if goldInfo.Gold != 0 {
 			aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
@@ -215,98 +190,15 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 			aTtAccount.Add(nil)
 		}
 	case mconst.Account_03_SaveMoney:
-		PUser, e1 := getUserAndStore(aUser.User.AgentUserId)
-		if e1 != nil {
-			return getUserResult(aUser, fmt.Errorf("没有对应的代理商:%d", aUser.User.AgentUserId))
-		}
-		if PUser.User.Gold < goldInfo.Gold {
-			return getUserResult(aUser, fmt.Errorf("代理商[%d],余额不足：%g", aUser.User.Pid, goldInfo.Gold))
-		}
-		PUser.User.Gold -= goldInfo.Gold
-		PUser.User.Gold = kit.Decimal(PUser.User.Gold)
-		e = PUser.User.Update(nil, "Gold")
-		if e != nil {
-			return getUserResult(aUser, e)
-		} else {
-			if goldInfo.Gold != 0 {
-				aTtAccount := models.TtAccount{UserId: PUser.User.Id, AccountType: int(mconst.Account_03_SaveMoney2),
-					StrType:     mconst.GetAccountName(mconst.Account_03_SaveMoney2),
-					Des:         fmt.Sprintf("用户%d[%s]'充值'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold),
-					CurUserGold: PUser.User.Gold,
-					Gold:        goldInfo.Gold,
-					Des2:        fmt.Sprintf("用户%d[%s]'充值'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold), DesMp: "",
-				}
-				aTtAccount.Add(nil)
-			}
-		}
-
-		//充值
-		aUser.User.Gold += goldInfo.Gold
-		aUser.User.SumSaveMoney += goldInfo.Gold
-		if aUser.User.MaxSaveMoney < goldInfo.Gold {
-			aUser.User.MaxSaveMoney = goldInfo.Gold
-
-			aUser.User.MaxSaveMoney = kit.Decimal(aUser.User.MaxSaveMoney)
-			aUser.User.SumSaveMoney = kit.Decimal(aUser.User.SumSaveMoney)
-			aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-			aUser.User.Update(nil, "Gold", "SumSaveMoney", "MaxSaveMoney")
-		} else {
-			aUser.User.SumSaveMoney = kit.Decimal(aUser.User.SumSaveMoney)
-			aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-			aUser.User.Update(nil, "Gold", "SumSaveMoney")
-		}
-
-		if goldInfo.Gold != 0 {
-			aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
-				StrType: mconst.GetAccountName(goldInfo.T), Des: goldInfo.Des, CurUserGold: aUser.User.Gold,
-				Gold: goldInfo.Gold, Des2: goldInfo.Des2, DesMp: goldInfo.DesMp,
-			}
-			aTtAccount.Add(nil)
-		}
+		return getUserResult(aUser, fmt.Errorf("不支持"))
 
 	case mconst.Account_04_DrawMoney:
 		//提现
-		if aUser.User.Gold < goldInfo.Gold {
-			return getUserResult(aUser, errors.New("余额不足"))
-		}
-
-		PUser, e1 := getUserAndStore(aUser.User.AgentUserId)
-		if e1 != nil {
-			return getUserResult(aUser, fmt.Errorf("没有对应的代理商:%d", aUser.User.AgentUserId))
-		}
-		PUser.User.Gold += goldInfo.Gold
-		PUser.User.Gold = kit.Decimal(PUser.User.Gold)
-		e = PUser.User.Update(nil, "Gold")
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, -goldInfo.Gold)
 		if e != nil {
 			return getUserResult(aUser, e)
-		} else {
-			if goldInfo.Gold != 0 {
-				aTtAccount := models.TtAccount{UserId: PUser.User.Id, AccountType: int(mconst.Account_04_DrawMoney2),
-					StrType:     mconst.GetAccountName(mconst.Account_04_DrawMoney2),
-					Des:         fmt.Sprintf("用户%d[%s]'提现'增加代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold),
-					CurUserGold: PUser.User.Gold,
-					Gold:        goldInfo.Gold,
-					Des2:        fmt.Sprintf("用户%d[%s]'提现'增加代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold), DesMp: "",
-				}
-				aTtAccount.Add(nil)
-			}
 		}
-
-		aUser.User.Gold -= goldInfo.Gold
-		aUser.User.SumDrawMoney += goldInfo.Gold
-		if aUser.User.MaxDrawMoney < goldInfo.Gold {
-			aUser.User.MaxDrawMoney = goldInfo.Gold
-
-			aUser.User.MaxDrawMoney = kit.Decimal(aUser.User.MaxDrawMoney)
-			aUser.User.SumDrawMoney = kit.Decimal(aUser.User.SumDrawMoney)
-			aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-			aUser.User.Update(nil, "Gold", "SumDrawMoney", "MaxDrawMoney")
-		} else {
-			aUser.User.SumDrawMoney = kit.Decimal(aUser.User.SumDrawMoney)
-			aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-			aUser.User.Update(nil, "Gold", "SumDrawMoney")
-		}
-
+		aUser.User.Gold = f
 		if goldInfo.Gold != 0 {
 			aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
 				StrType: mconst.GetAccountName(goldInfo.T), Des: goldInfo.Des, CurUserGold: aUser.User.Gold,
@@ -317,38 +209,11 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 
 	case mconst.Account_07_DrawMoneyR:
 		//提现拒绝
-		PUser, e1 := getUserAndStore(aUser.User.AgentUserId)
-		if e1 != nil {
-			return getUserResult(aUser, fmt.Errorf("没有对应的代理商:%d", aUser.User.AgentUserId))
-		}
-		if PUser.User.Gold < goldInfo.Gold {
-			return getUserResult(aUser, fmt.Errorf("代理商[%d],余额不足：%g", aUser.User.Pid, goldInfo.Gold))
-		}
-		PUser.User.Gold -= goldInfo.Gold
-		PUser.User.Gold = kit.Decimal(PUser.User.Gold)
-		e = PUser.User.Update(nil, "Gold")
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, goldInfo.Gold)
 		if e != nil {
 			return getUserResult(aUser, e)
-		} else {
-			if goldInfo.Gold != 0 {
-				aTtAccount := models.TtAccount{UserId: PUser.User.Id, AccountType: int(mconst.Account_07_DrawMoneyR2),
-					StrType:     mconst.GetAccountName(mconst.Account_07_DrawMoneyR2),
-					Des:         fmt.Sprintf("用户%d[%s]'提现拒绝'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold),
-					CurUserGold: PUser.User.Gold,
-					Gold:        goldInfo.Gold,
-					Des2:        fmt.Sprintf("用户%d[%s]'提现拒绝'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold), DesMp: "",
-				}
-				aTtAccount.Add(nil)
-			}
 		}
-
-		aUser.User.Gold += goldInfo.Gold
-
-		aUser.User.SumDrawMoney -= goldInfo.Gold
-		aUser.User.SumDrawMoney = kit.Decimal(aUser.User.SumDrawMoney)
-		aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-		aUser.User.Update(nil, "Gold", "SumDrawMoney")
-
+		aUser.User.Gold = f
 		if goldInfo.Gold != 0 {
 			aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
 				StrType: mconst.GetAccountName(goldInfo.T), Des: goldInfo.Des, CurUserGold: aUser.User.Gold,
@@ -359,38 +224,16 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 
 	case mconst.Account_08_AddMoney:
 		//上分
-		PUser, e1 := getUserAndStore(aUser.User.AgentUserId)
-		if e1 != nil {
-			return getUserResult(aUser, fmt.Errorf("没有对应的代理商:%d", aUser.User.AgentUserId))
-		}
-		if PUser.User.Gold < goldInfo.Gold {
-			return getUserResult(aUser, fmt.Errorf("代理商[%d],余额不足：%g", aUser.User.Pid, goldInfo.Gold))
-		}
-		PUser.User.Gold -= goldInfo.Gold
-		PUser.User.Gold = kit.Decimal(PUser.User.Gold)
-		e = PUser.User.Update(nil, "Gold")
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, goldInfo.Gold)
 		if e != nil {
 			return getUserResult(aUser, e)
-		} else {
-			if goldInfo.Gold != 0 {
-				aTtAccount := models.TtAccount{UserId: PUser.User.Id, AccountType: int(mconst.Account_08_AddMoney2),
-					StrType:     mconst.GetAccountName(mconst.Account_08_AddMoney2),
-					Des:         fmt.Sprintf("用户%d[%s]'上分'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold),
-					CurUserGold: PUser.User.Gold,
-					Gold:        goldInfo.Gold,
-					Des2:        fmt.Sprintf("用户%d[%s]'上分'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold), DesMp: "",
-				}
-				aTtAccount.Add(nil)
-			}
 		}
-
-		aUser.User.Gold += goldInfo.Gold
+		aUser.User.Gold = f
 		aUser.User.SumAddMoney += goldInfo.Gold
 		if aUser.User.MaxAddMoney < goldInfo.Gold {
 			aUser.User.SumAddMoney = kit.Decimal(aUser.User.SumAddMoney)
 			aUser.User.Gold = kit.Decimal(aUser.User.Gold)
 			aUser.User.MaxAddMoney = kit.Decimal(aUser.User.Gold)
-			aUser.User.Update(nil, "Gold", "SumAddMoney", "MaxAddMoney")
 		} else {
 			aUser.User.SumAddMoney = kit.Decimal(aUser.User.SumAddMoney)
 			aUser.User.Gold = kit.Decimal(aUser.User.Gold)
@@ -411,29 +254,11 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 			return getUserResult(aUser, errors.New("余额不足"))
 		}
 
-		PUser, e1 := getUserAndStore(aUser.User.AgentUserId)
-		if e1 != nil {
-			return getUserResult(aUser, fmt.Errorf("没有对应的代理商:%d", aUser.User.AgentUserId))
-		}
-		PUser.User.Gold += goldInfo.Gold
-		PUser.User.Gold = kit.Decimal(PUser.User.Gold)
-		e = PUser.User.Update(nil, "Gold")
+		f, e := httpGameServer.AddMoney(goldInfo.GroupId, goldInfo.UserId, -goldInfo.Gold)
 		if e != nil {
 			return getUserResult(aUser, e)
-		} else {
-			if goldInfo.Gold != 0 {
-				aTtAccount := models.TtAccount{UserId: PUser.User.Id, AccountType: int(mconst.Account_09_DecMoney2),
-					StrType:     mconst.GetAccountName(mconst.Account_09_DecMoney2),
-					Des:         fmt.Sprintf("用户%d[%s]' '增加代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold),
-					CurUserGold: PUser.User.Gold,
-					Gold:        goldInfo.Gold,
-					Des2:        fmt.Sprintf("用户%d[%s]'下分'增加代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold), DesMp: "",
-				}
-				aTtAccount.Add(nil)
-			}
 		}
-
-		aUser.User.Gold -= goldInfo.Gold
+		aUser.User.Gold = f
 		aUser.User.SumDecMoney += goldInfo.Gold
 		if aUser.User.MaxDecMoney < goldInfo.Gold {
 			aUser.User.SumDecMoney = kit.Decimal(aUser.User.SumDecMoney)
@@ -455,44 +280,7 @@ func AddGold(goldInfo gBox.AddGoldInfo) (models.TtGameUser, error) {
 		}
 
 	case mconst.Account_05_Give:
-		//赠送
-		PUser, e1 := getUserAndStore(aUser.User.AgentUserId)
-		if e1 != nil {
-			return getUserResult(aUser, fmt.Errorf("没有对应的代理商:%d", aUser.User.AgentUserId))
-		}
-		if PUser.User.Gold < goldInfo.Gold {
-			return getUserResult(aUser, fmt.Errorf("代理商[%d],余额不足：%g", aUser.User.Pid, goldInfo.Gold))
-		}
-		PUser.User.Gold -= goldInfo.Gold
-		PUser.User.Gold = kit.Decimal(PUser.User.Gold)
-		e = PUser.User.Update(nil, "Gold")
-		if e != nil {
-			return getUserResult(aUser, e)
-		} else {
-			if goldInfo.Gold != 0 {
-				aTtAccount := models.TtAccount{UserId: PUser.User.Id, AccountType: int(mconst.Account_05_Give2),
-					StrType:     mconst.GetAccountName(mconst.Account_05_Give2),
-					Des:         fmt.Sprintf("用户%d[%s]'赠送'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold),
-					CurUserGold: PUser.User.Gold,
-					Gold:        goldInfo.Gold,
-					Des2:        fmt.Sprintf("用户%d[%s]'赠送'扣除代理商%d[%s]余额：%g", aUser.User.Id, aUser.User.UserName, PUser.User.Id, PUser.User.UserName, goldInfo.Gold), DesMp: "",
-				}
-				aTtAccount.Add(nil)
-			}
-		}
-
-		aUser.User.Gold += goldInfo.Gold
-
-		aUser.User.Gold = kit.Decimal(aUser.User.Gold)
-		aUser.User.Update(nil, "Gold")
-
-		if goldInfo.Gold != 0 {
-			aTtAccount := models.TtAccount{UserId: goldInfo.UserId, AccountType: int(goldInfo.T),
-				StrType: mconst.GetAccountName(goldInfo.T), Des: goldInfo.Des, CurUserGold: aUser.User.Gold,
-				Gold: goldInfo.Gold, Des2: goldInfo.Des2, DesMp: goldInfo.DesMp,
-			}
-			aTtAccount.Add(nil)
-		}
+		return getUserResult(aUser, errors.New("不支持"))
 	}
 
 	return getUserResult(aUser, e)

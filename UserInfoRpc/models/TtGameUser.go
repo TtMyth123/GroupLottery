@@ -162,11 +162,12 @@ func (this *TtGameUser) Add(o orm.Ormer, MarketID int) error {
 	return e
 }
 func (this *TtGameUser) Update(o orm.Ormer, cols ...string) error {
-	if o == nil {
-		o = orm.NewOrm()
-	}
-	_, e := o.Update(this, cols...)
-	return e
+	return nil
+	//if o == nil {
+	//	o = orm.NewOrm()
+	//}
+	//_, e := o.Update(this, cols...)
+	//return e
 }
 func (this *TtGameUser) Del() error {
 	o := orm.NewOrm()
