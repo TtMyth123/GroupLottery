@@ -3,14 +3,14 @@ package regBll
 import (
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/GInstance"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	userModels "github.com/TtMyth123/UserInfoRpc/models"
+	userMconst "github.com/TtMyth123/UserInfoRpc/models/mconst"
 	"github.com/astaxie/beego/orm"
-	"ttmyth123/GroupLottery/GameServer/GInstance"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	userModels "ttmyth123/GroupLottery/UserInfoRpc/models"
-	userMconst "ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
 )
 
 func Reg(Area, UserName, pwd, MoneyPwd string, Code, UserType int, mpFiled map[string]string) (userModels.TtGameUser, error) {
@@ -20,7 +20,7 @@ func Reg(Area, UserName, pwd, MoneyPwd string, Code, UserType int, mpFiled map[s
 
 		//aTtDrawSaveSet.RegGiveCount
 		des := fmt.Sprintf("注册奖励金额%d。", aTtDrawSaveSet.RegGiveCount)
-		goldInfo := gBox.AddGoldInfo{GroupId:0,UserId: u.Id, Gold: float64(aTtDrawSaveSet.RegGiveCount),
+		goldInfo := gBox.AddGoldInfo{GroupId: 0, UserId: u.Id, Gold: float64(aTtDrawSaveSet.RegGiveCount),
 			T: userMconst.Account_05_Give, Des: des,
 			Des2: GTtHint.GetTtHint().GetHint("注册奖励金额%d。"), DesMp: GTtHint.GetTtHint().GetMpString(aTtDrawSaveSet.RegGiveCount)}
 		u, e = GInstance.GetUserRpcClient().AddGold(goldInfo)

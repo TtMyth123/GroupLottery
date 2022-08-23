@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/Admin/controllers/base"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/kit/ttLog"
+	"github.com/TtMyth123/Admin/controllers/base"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/kit/ttLog"
 )
 
 type ChatController struct {

@@ -2,15 +2,15 @@ package LotteryResult
 
 import (
 	"encoding/json"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxBox"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxNbcResultKit"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/kit/httpClientKit"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/timeKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxBox"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxNbcResultKit"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/kit/httpClientKit"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/timeKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type WsxNbcResultServer struct {

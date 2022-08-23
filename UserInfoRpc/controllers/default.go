@@ -1,8 +1,8 @@
 package controllers
 
 import (
+	"github.com/TtMyth123/UserInfoRpc/OtherServer/httpGameServer"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/UserInfoRpc/OtherServer/httpGameServer"
 )
 
 type MainController struct {

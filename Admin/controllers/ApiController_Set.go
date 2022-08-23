@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/Admin/OtherServer/GameClientHttp"
-	"ttmyth123/GroupLottery/Admin/controllers/SetBll"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
+	"github.com/TtMyth123/Admin/OtherServer/GameClientHttp"
+	"github.com/TtMyth123/Admin/controllers/SetBll"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
 )
 
 func (this *ApiController) GetOddsList() {

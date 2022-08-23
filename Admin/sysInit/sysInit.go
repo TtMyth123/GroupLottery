@@ -1,10 +1,10 @@
 package sysInit
 
 import (
-	"ttmyth123/GroupLottery/Admin/CacheData"
-	"ttmyth123/GroupLottery/Admin/GInstance"
-	"ttmyth123/GroupLottery/Admin/models"
-	"ttmyth123/kit/ttLog"
+	"github.com/TtMyth123/Admin/CacheData"
+	"github.com/TtMyth123/Admin/GInstance"
+	"github.com/TtMyth123/Admin/models"
+	"github.com/TtMyth123/kit/ttLog"
 )
 
 func Init() {

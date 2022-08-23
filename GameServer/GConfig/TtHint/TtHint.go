@@ -3,8 +3,8 @@ package TtHint
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/TtMyth123/kit/stringKit"
 	"io/ioutil"
-	"ttmyth123/kit/stringKit"
 )
 
 type CN struct {

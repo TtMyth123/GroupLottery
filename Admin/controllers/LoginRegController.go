@@ -1,14 +1,14 @@
 package controllers
 
 import (
+	"github.com/TtMyth123/Admin/CacheData"
+	"github.com/TtMyth123/Admin/GConfig"
+	"github.com/TtMyth123/Admin/controllers/base"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/Admin/models"
+	"github.com/TtMyth123/kit"
+	"github.com/TtMyth123/kit/pwdKit"
 	"strings"
-	"ttmyth123/GroupLottery/Admin/CacheData"
-	"ttmyth123/GroupLottery/Admin/GConfig"
-	"ttmyth123/GroupLottery/Admin/controllers/base"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/GroupLottery/Admin/models"
-	"ttmyth123/kit"
-	"ttmyth123/kit/pwdKit"
 )
 
 type LoginRegController struct {

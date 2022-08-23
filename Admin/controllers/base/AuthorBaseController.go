@@ -2,11 +2,11 @@ package base
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Admin/CacheData"
+	"github.com/TtMyth123/Admin/GConfig"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/Admin/models"
 	"time"
-	"ttmyth123/GroupLottery/Admin/CacheData"
-	"ttmyth123/GroupLottery/Admin/GConfig"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/GroupLottery/Admin/models"
 )
 
 var (

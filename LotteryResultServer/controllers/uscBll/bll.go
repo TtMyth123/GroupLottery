@@ -1,8 +1,8 @@
 package uscBll
 
 import (
-	"ttmyth123/GroupLottery/LotteryResultServer/GInstance"
-	"ttmyth123/GroupLottery/LotteryResultServer/GInstance/lottery"
+	"github.com/TtMyth123/LotteryResultServer/GInstance"
+	"github.com/TtMyth123/LotteryResultServer/GInstance/lottery"
 )
 
 /**

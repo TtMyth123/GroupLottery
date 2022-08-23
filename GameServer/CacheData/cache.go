@@ -2,11 +2,11 @@ package CacheData
 
 import (
 	"fmt"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/kit/beegoCacheKit"
+	"github.com/TtMyth123/kit/timeKit"
 	"github.com/astaxie/beego"
 	"time"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/kit/beegoCacheKit"
-	"ttmyth123/kit/timeKit"
 )
 
 var mBeegoCache *beegoCacheKit.BeegoCache

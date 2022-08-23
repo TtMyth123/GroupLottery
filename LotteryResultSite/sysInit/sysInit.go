@@ -1,8 +1,8 @@
 package sysInit
 
 import (
-	"ttmyth123/GroupLottery/LotteryResultSite/models"
-	"ttmyth123/kit/ttLog"
+	"github.com/TtMyth123/LotteryResultSite/models"
+	"github.com/TtMyth123/kit/ttLog"
 )
 
 func Init() {

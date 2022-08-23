@@ -1,6 +1,6 @@
 package gBox
 
-import "ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
+import "github.com/TtMyth123/UserInfoRpc/models/mconst"
 
 type AddGoldInfo struct {
 	UserId    int

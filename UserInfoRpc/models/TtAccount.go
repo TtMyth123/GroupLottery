@@ -1,9 +1,9 @@
 package models
 
 import (
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
 )
 
 /**
@@ -12,7 +12,7 @@ import (
 type TtAccount struct {
 	Id          int
 	UserId      int
-	GroupId 	int
+	GroupId     int
 	AccountType int
 	StrType     string `orm:"size(200)"`
 	Des         string `orm:"size(512)"`

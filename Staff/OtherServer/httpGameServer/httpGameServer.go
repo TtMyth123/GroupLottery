@@ -4,15 +4,15 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/Staff/GConfig"
+	"github.com/TtMyth123/Staff/OtherServer/httpGameServer/httpBox"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/kit/httpClientKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
 	"strconv"
 	"strings"
 	"time"
-	"ttmyth123/GroupLottery/Staff/GConfig"
-	"ttmyth123/GroupLottery/Staff/OtherServer/httpGameServer/httpBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/kit/httpClientKit"
-	"ttmyth123/kit/ttLog"
 )
 
 var (

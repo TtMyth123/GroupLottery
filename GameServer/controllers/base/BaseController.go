@@ -4,16 +4,16 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/GConfig"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/controllers/base/TtError"
+	"github.com/TtMyth123/GameServer/controllers/base/enums"
+	"github.com/TtMyth123/kit/beegoCacheKit"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
 	"github.com/dgrijalva/jwt-go"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/GConfig"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/TtError"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/enums"
-	"ttmyth123/kit/beegoCacheKit"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 var isDev = false

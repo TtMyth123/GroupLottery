@@ -1,10 +1,10 @@
 package chat
 
 import (
+	"github.com/TtMyth123/Staff/GInstance"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/UserServer/RpcBox"
+	"github.com/TtMyth123/UserInfoRpc/models"
 	"sync"
-	"ttmyth123/GroupLottery/Staff/GInstance"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/UserServer/RpcBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
 )
 
 type StaffMsg struct {

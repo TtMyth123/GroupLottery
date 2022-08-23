@@ -1,4 +1,4 @@
-set GOPATH="D:\work\go\Public";"D:\work\go\WorkSpace2"
+set GOPATH="D:\work\go\Public";"D:\work\go\WorkSpace"
 SET CGO_ENABLED=0
 set GOARCH=amd64
 set GOOS=linux

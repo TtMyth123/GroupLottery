@@ -5,17 +5,210 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4449ae0a-eec4-43f2-a72b-2e8a05761940" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/UserInfoRpc/doc/张哥新加拿大.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/CacheData/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/CacheData/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/GInstance/gInstance.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/GInstance/gInstance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/OtherServer/GameClientHttp/YhClentHttp.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/OtherServer/GameClientHttp/YhClentHttp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/OtherServer/httpGameServer/httpGameServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/OtherServer/httpGameServer/httpGameServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/bliudLinux.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/bliudLinux.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/AFinanceBll/financelBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/AFinanceBll/financelBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController_Article.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController_Article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController_Award.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController_Award.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController_Finance.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController_Finance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController_Other.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController_Other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController_Report.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController_Report.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController_Set.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController_Set.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ApiController_User.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ApiController_User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ArticleBll/ArticleBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ArticleBll/ArticleBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/AwardBll/AwardBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/AwardBll/AwardBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ChatController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ChatController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/KitController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/KitController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/LoginRegController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/LoginRegController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/ReportBll/ReportBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/ReportBll/ReportBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/SetBll/setBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/SetBll/setBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/SysBll/sysBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/SysBll/sysBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/SysController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/SysController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/UserBll/userBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/UserBll/userBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/base/ABaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/base/ABaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/base/AuthorBaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/base/AuthorBaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/base/JsonResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/base/JsonResult.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/controllers/regBll/regBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/controllers/regBll/regBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/models/ChatInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/models/ChatInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/models/SysLog.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/models/SysLog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/models/SysMenu.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/models/SysMenu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/models/SysUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/models/SysUser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/models/SysUserEx.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/models/SysUserEx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/models/SysUserMenuRel.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/models/SysUserMenuRel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/models/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/sysInit/sysInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/sysInit/sysInit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/tests/a_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/tests/a_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/CacheData/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/CacheData/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/GConfig/TtHint/TtHint.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/GConfig/TtHint/TtHint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/GInstance/GTtHint/GTtHint.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/GInstance/GTtHint/GTtHint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/GInstance/gInstance.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/GInstance/gInstance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultKit/Game28ResultKit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultKit/Game28ResultKit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultKit/Game28ResultKit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultKit/Game28ResultKit_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Bj28ResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Bj28ResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Jnd28ResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Jnd28ResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Jnd28ResultServer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Jnd28ResultServer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Xg28ResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Xg28ResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Xjp28ResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Xjp28ResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/HandlerAwardInfoFunc.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/HandlerAwardInfoFunc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultKit/Usc10Kit/kit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultKit/Usc10Kit/kit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultKit/Usc5Kit/kit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultKit/Usc5Kit/kit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultKit/Usc8for20Kit/kit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultKit/Usc8for20Kit/kit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultServer/UscBox/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultServer/UscBox/const.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultServer/UscResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/UscResultServer/UscResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultKit/WsxResultKit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultKit/WsxResultKit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultKit/WsxResultKit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultKit/WsxResultKit_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultServer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxBbcResultServer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxNbcResultKit/WsxResultKit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxNbcResultKit/WsxResultKit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxNbcResultKit/WsxResultKit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxNbcResultKit/WsxResultKit_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxNbcResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxNbcResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxZbcResultKit/WsxResultKit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxZbcResultKit/WsxResultKit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxZbcResultKit/WsxResultKit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxZbcResultKit/WsxResultKit_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryResult/WsxZbcResultServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryResult/WsxZbcResultServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/BaseLotteryServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/BaseLotteryServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/Game28Server/Game28Server.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/Game28Server/Game28Server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/Game28Server/Game28Server_GameHttpData.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/Game28Server/Game28Server_GameHttpData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/ILotteryServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/ILotteryServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/BaseUscServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/BaseUscServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/Usc10Server.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/Usc10Server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/Usc5Server.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/Usc5Server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/Usc8for20Server.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/UscServer/Usc8for20Server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/BaseWsxServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/BaseWsxServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/WsxBbcServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/WsxBbcServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/WsxNbcServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/WsxNbcServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/WsxZbcServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/LotteryServer/WsxServer/WsxZbcServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/OtherServer/httpGameServer/httpGameServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/OtherServer/httpGameServer/httpGameServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/bliudLinux.bat" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/bliudLinux.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/ApiController.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/ApiController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/ApiController_Finance.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/ApiController_Finance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/ApiController_Other.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/ApiController_Other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/ApiController_User.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/ApiController_User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/RegLoginController.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/RegLoginController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/base/AuthorBaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/base/AuthorBaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/base/BaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/base/BaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/base/JsonResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/base/JsonResult.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/financeBll/financelBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/financeBll/financelBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/otherBll/otherBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/otherBll/otherBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/regBll/regBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/regBll/regBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/controllers/userBll/userBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/controllers/userBll/userBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/LoAwardInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/LoAwardInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/LoBetGroupInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/LoBetGroupInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/LoBetInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/LoBetInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/LoOddsInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/LoOddsInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/LoSetAwardInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/LoSetAwardInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/LoUserInfo2.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/LoUserInfo2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtAgentPayInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtAgentPayInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtArticleInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtArticleInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtDrawMoney.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtDrawMoney.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtDrawSaveSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtDrawSaveSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtGameInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtGameInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtRebateSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtRebateSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtSaveMoney.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtSaveMoney.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/TtServiceInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/TtServiceInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/models/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/sysInit/sysInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/sysInit/sysInit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameServer/tests/a_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/GameServer/tests/a_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28Game.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28Game.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28Game2.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28Game2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28Game7710.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28Game7710.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28GameKeno.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/GInstance/Lottery28Game/lottery28GameKeno.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/GInstance/LotteryUscGame/UscGame.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/GInstance/LotteryUscGame/UscGame.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/GInstance/gInstance.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/GInstance/gInstance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/controllers/ApiController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/controllers/ApiController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/controllers/base/BaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/controllers/base/BaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/controllers/base/b.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/controllers/base/b.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/controllers/base/cBo/JsonResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/controllers/base/cBo/JsonResult.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/controllers/uscBll/bll.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/controllers/uscBll/bll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultServer/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultServer/tests/default_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/controllers/ApiController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/controllers/ApiController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/controllers/base/ABaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/controllers/base/ABaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/controllers/base/JsonResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/controllers/base/JsonResult.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/controllers/bll/bll.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/controllers/bll/bll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/models/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/sysInit/sysInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/sysInit/sysInit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LotteryResultSite/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/LotteryResultSite/tests/default_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/CacheData/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/CacheData/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/GData/StaffData.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/GData/StaffData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/GData/chat/ChatRoomUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/GData/chat/ChatRoomUser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/GData/chat/GroupChatMsg.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/GData/chat/GroupChatMsg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/GData/chat/StaffMsg.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/GData/chat/StaffMsg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/GData/gData.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/GData/gData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/GData/testData/testData.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/GData/testData/testData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/GInstance/gInstance.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/GInstance/gInstance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/OtherServer/httpGameServer/httpGameServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/OtherServer/httpGameServer/httpGameServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/ChatController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/ChatController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/ChatExController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/ChatExController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/LoginRegController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/LoginRegController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/OtherController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/OtherController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/TestController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/TestController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/base/ABaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/base/ABaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/base/AuthorBaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/base/AuthorBaseController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/base/JsonResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/base/JsonResult.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/bll/chatBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/bll/chatBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/controllers/bll/staffBll.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/controllers/bll/staffBll.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/models/TtQuickReply.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/models/TtQuickReply.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/models/TtReplyMain.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/models/TtReplyMain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/models/TtReplySub.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/models/TtReplySub.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/models/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/sysInit/sysInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/sysInit/sysInit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/tests/default_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GConfig/TtHint/TtHint.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/GConfig/TtHint/TtHint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gBox/AddGoldInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/GData/gBox/AddGoldInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gBox/AddRebateInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/GData/gBox/AddRebateInfo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserInfoRpc/GData/gData.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/GData/gData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GInstance/AreaConfig/areaConfig.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/GInstance/AreaConfig/areaConfig.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/GInstance/GTtHint/GTtHint.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/GInstance/GTtHint/GTtHint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/OtherServer/httpGameServer/httpGameServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/OtherServer/httpGameServer/httpGameServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/RpcServer/RpcServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/RpcServer/RpcServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/RpcServer/UserServer/RpcBox/box.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/RpcServer/UserServer/RpcBox/box.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/RpcServer/UserServer/UserServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/RpcServer/UserServer/UserServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/RpcServer/UserServer/chatBll/chat.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/RpcServer/UserServer/chatBll/chat.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/UserRpcClient/RepClient.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/UserRpcClient/RepClient.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/bliudLinux.bat" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/bliudLinux.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtAccount.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtAccount.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtArea.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtArea.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtAreaRefGame.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtAreaRefGame.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtChatInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtChatInfo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtGameUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtGameUser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtLatelyChatUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtLatelyChatUser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/models/TtRebateInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/models/TtRebateInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfoRpc/sysInit/sysInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfoRpc/sysInit/sysInit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/LotteryAdmin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/LotteryAdmin/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Go" />
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Go/V1_18" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -31,52 +224,142 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Admin/controllers/ApiController_Article.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Admin/controllers/ArticleBll/ArticleBll.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Admin/tests/a_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameServer/LotteryResult/Game28ResultServer/Bj28ResultServer.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameServer/LotteryResult/HandlerAwardInfoFunc.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameServer/tests/a_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LotteryResultServer/GInstance/lottery/lottery.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LotteryResultServer/controllers/default.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LotteryResultServer/main.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserInfoRpc/GData/gData.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="26b5YgDidLKU8EWUtnelnHT5lfk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserInfoRpc/doc" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "D:/新建文件夹 (1)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\go\WorkSpace\src\ttmyth123\GroupLottery\UserInfoRpc\doc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build ttmyth123/GroupLottery/UserInfoRpc">
-    <configuration name="go build ttmyth123/GroupLottery/Admin" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build github.com/TtMyth123/Staff">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="GroupLottery" />
       <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/TtMyth123/Admin" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$/Admin" />
       <kind value="PACKAGE" />
-      <package value="ttmyth123/GroupLottery/Admin" />
+      <package value="github.com/TtMyth123/Admin" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/Admin/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build ttmyth123/GroupLottery/UserInfoRpc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/TtMyth123/GameServer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$/GameServer" />
+      <kind value="PACKAGE" />
+      <package value="github.com/TtMyth123/GameServer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/GameServer/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/TtMyth123/LotteryResultServer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$/LotteryResultServer" />
+      <kind value="PACKAGE" />
+      <package value="github.com/TtMyth123/LotteryResultServer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/LotteryResultServer/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/TtMyth123/LotteryResultSite" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$/LotteryResultSite" />
+      <kind value="PACKAGE" />
+      <package value="github.com/TtMyth123/LotteryResultSite" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/LotteryResultSite/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/TtMyth123/Staff" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$/Staff" />
+      <kind value="PACKAGE" />
+      <package value="github.com/TtMyth123/Staff" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Staff/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/TtMyth123/UserInfoRpc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GroupLottery" />
       <working_directory value="$PROJECT_DIR$/UserInfoRpc" />
       <kind value="PACKAGE" />
-      <package value="ttmyth123/GroupLottery/UserInfoRpc" />
+      <package value="github.com/TtMyth123/UserInfoRpc" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/UserInfoRpc/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="TestAAB in ttmyth123/GroupLottery/GameServer/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$/GameServer/tests" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="ttmyth123/GroupLottery/GameServer/tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestAAB\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="GroupLottery" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.go build ttmyth123/GroupLottery/Admin" />
-      <item itemvalue="Go Build.go build ttmyth123/GroupLottery/UserInfoRpc" />
+      <item itemvalue="Go Build.go build github.com/TtMyth123/Staff" />
+      <item itemvalue="Go Build.go build github.com/TtMyth123/Admin" />
+      <item itemvalue="Go Build.go build github.com/TtMyth123/LotteryResultSite" />
+      <item itemvalue="Go Build.go build github.com/TtMyth123/LotteryResultServer" />
+      <item itemvalue="Go Build.go build github.com/TtMyth123/GameServer" />
+      <item itemvalue="Go Build.go build github.com/TtMyth123/UserInfoRpc" />
+      <item itemvalue="Go Test.TestAAB in ttmyth123/GroupLottery/GameServer/tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build ttmyth123/GroupLottery/UserInfoRpc" />
-        <item itemvalue="Go Build.go build ttmyth123/GroupLottery/Admin" />
+        <item itemvalue="Go Build.go build github.com/TtMyth123/LotteryResultSite" />
+        <item itemvalue="Go Build.go build github.com/TtMyth123/GameServer" />
+        <item itemvalue="Go Build.go build github.com/TtMyth123/LotteryResultServer" />
+        <item itemvalue="Go Build.go build github.com/TtMyth123/UserInfoRpc" />
+        <item itemvalue="Go Test.TestAAB in ttmyth123/GroupLottery/GameServer/tests" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +374,51 @@
       <workItem from="1647679497503" duration="1977000" />
       <workItem from="1647836220755" duration="1344000" />
       <workItem from="1647845517700" duration="4606000" />
-      <workItem from="1647939030171" duration="533000" />
+      <workItem from="1647939030171" duration="1241000" />
+      <workItem from="1648024869993" duration="1980000" />
+      <workItem from="1648306438038" duration="2302000" />
+      <workItem from="1648402212643" duration="596000" />
+      <workItem from="1648449175477" duration="3241000" />
+      <workItem from="1648796659017" duration="595000" />
+      <workItem from="1649752365347" duration="3146000" />
+      <workItem from="1649888502036" duration="1206000" />
+      <workItem from="1650395476343" duration="1854000" />
+      <workItem from="1650835952107" duration="595000" />
+      <workItem from="1650932957394" duration="4724000" />
+      <workItem from="1651317636147" duration="596000" />
+      <workItem from="1654449327720" duration="19000" />
+      <workItem from="1654460696514" duration="156000" />
+      <workItem from="1654461726637" duration="3324000" />
+      <workItem from="1654473146287" duration="1333000" />
+      <workItem from="1654477765261" duration="25000" />
+      <workItem from="1654478430134" duration="382000" />
+      <workItem from="1654479195203" duration="1679000" />
+      <workItem from="1654526954124" duration="21000" />
+      <workItem from="1654528851953" duration="3699000" />
+      <workItem from="1654615950142" duration="385000" />
+      <workItem from="1654616428178" duration="835000" />
+      <workItem from="1654627037692" duration="608000" />
+      <workItem from="1654787110175" duration="1833000" />
+      <workItem from="1654834266526" duration="2352000" />
+      <workItem from="1654933375121" duration="1810000" />
+      <workItem from="1654956557643" duration="688000" />
+      <workItem from="1654962450388" duration="385000" />
+      <workItem from="1655106307881" duration="1776000" />
+      <workItem from="1655637688921" duration="622000" />
+      <workItem from="1657172033227" duration="1328000" />
+      <workItem from="1657405363646" duration="1246000" />
+      <workItem from="1659234361986" duration="11000" />
+      <workItem from="1659235948718" duration="2521000" />
+      <workItem from="1659335689321" duration="139000" />
+      <workItem from="1659946782721" duration="3391000" />
+      <workItem from="1659982049086" duration="39000" />
+      <workItem from="1659984189058" duration="6028000" />
+      <workItem from="1660505924172" duration="11804000" />
+      <workItem from="1660721837225" duration="1233000" />
+      <workItem from="1660756501513" duration="1958000" />
+      <workItem from="1660791789970" duration="966000" />
+      <workItem from="1661052252521" duration="627000" />
+      <workItem from="1661201026192" duration="5101000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1647679764588</created>
@@ -121,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647847134677</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <created>1647939596686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647939596686</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,19 +471,18 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
     <environment>
       <map>
         <entry key="GOPROXY" value="http://goproxy.cn,direct" />
       </map>
     </environment>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -158,6 +491,26 @@
           <url>file://$PROJECT_DIR$/UserInfoRpc/controllers/default.go</url>
           <line>22</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/GameServer/tests/a_test.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Admin/controllers/base/ABaseController.go</url>
+          <line>67</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Admin/main.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/GameServer/main.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/GConfig"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/timeKit"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/GConfig"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/timeKit"
 )
 
 type TtArticleInfo struct {

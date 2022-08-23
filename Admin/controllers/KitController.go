@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Admin/controllers/base"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/kit"
+	"github.com/TtMyth123/kit/httpKit"
 	"os"
-	"ttmyth123/GroupLottery/Admin/controllers/base"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/kit"
-	"ttmyth123/kit/httpKit"
 )
 
 type KitController struct {

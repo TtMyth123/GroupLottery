@@ -1,10 +1,10 @@
 package models
 
 import (
+	game_models "github.com/TtMyth123/GameServer/models"
+	user_models "github.com/TtMyth123/UserInfoRpc/models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	game_models "ttmyth123/GroupLottery/GameServer/models"
-	user_models "ttmyth123/GroupLottery/UserInfoRpc/models"
 
 	_ "github.com/go-sql-driver/mysql"
 )

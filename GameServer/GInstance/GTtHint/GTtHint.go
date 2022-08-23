@@ -1,7 +1,7 @@
 package GTtHint
 
 import (
-	"ttmyth123/GroupLottery/GameServer/GConfig/TtHint"
+	"github.com/TtMyth123/GameServer/GConfig/TtHint"
 )
 
 var (

@@ -3,16 +3,16 @@ package UserBll
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/TtMyth123/Admin/GInstance"
+	"github.com/TtMyth123/Admin/OtherServer/httpGameServer"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/pwdKit"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/Admin/GInstance"
-	"ttmyth123/GroupLottery/Admin/OtherServer/httpGameServer"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/pwdKit"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type GameUser struct {

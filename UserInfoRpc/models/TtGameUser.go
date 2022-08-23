@@ -3,13 +3,13 @@ package models
 import (
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/pwdKit"
+	"github.com/TtMyth123/kit/timeKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/pwdKit"
-	"ttmyth123/kit/timeKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type TtGameUser struct {

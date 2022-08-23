@@ -1,8 +1,8 @@
 package models
 
 import (
+	"github.com/TtMyth123/GameServer/models/mconst"
 	"github.com/astaxie/beego/orm"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
 )
 
 type TtGameInfo struct {

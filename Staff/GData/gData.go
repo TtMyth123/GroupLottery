@@ -1,11 +1,11 @@
 package GData
 
 import (
+	"github.com/TtMyth123/Staff/GData/chat"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"sync"
-	"ttmyth123/GroupLottery/Staff/GData/chat"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 var (

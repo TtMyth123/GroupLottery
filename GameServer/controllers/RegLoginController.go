@@ -1,14 +1,14 @@
 package controllers
 
 import (
+	"github.com/TtMyth123/GameServer/CacheData"
+	"github.com/TtMyth123/GameServer/GInstance"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/controllers/base"
+	"github.com/TtMyth123/GameServer/controllers/base/enums"
+	"github.com/TtMyth123/GameServer/controllers/regBll"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/CacheData"
-	"ttmyth123/GroupLottery/GameServer/GInstance"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/controllers/base"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/enums"
-	"ttmyth123/GroupLottery/GameServer/controllers/regBll"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
 )
 
 type RegLoginController struct {

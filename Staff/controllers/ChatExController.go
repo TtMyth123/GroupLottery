@@ -2,18 +2,18 @@ package controllers
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Staff/GConfig"
+	"github.com/TtMyth123/Staff/GInstance"
+	"github.com/TtMyth123/Staff/controllers/base"
+	"github.com/TtMyth123/Staff/controllers/base/enums"
+	"github.com/TtMyth123/Staff/controllers/bll"
+	"github.com/TtMyth123/Staff/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/UserServer/RpcBox"
+	"github.com/TtMyth123/kit"
+	"github.com/TtMyth123/kit/TtErrors"
+	"github.com/TtMyth123/kit/httpKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"strings"
-	"ttmyth123/GroupLottery/Staff/GConfig"
-	"ttmyth123/GroupLottery/Staff/GInstance"
-	"ttmyth123/GroupLottery/Staff/controllers/base"
-	"ttmyth123/GroupLottery/Staff/controllers/base/enums"
-	"ttmyth123/GroupLottery/Staff/controllers/bll"
-	"ttmyth123/GroupLottery/Staff/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/UserServer/RpcBox"
-	"ttmyth123/kit"
-	"ttmyth123/kit/TtErrors"
-	"ttmyth123/kit/httpKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type ChatExController struct {

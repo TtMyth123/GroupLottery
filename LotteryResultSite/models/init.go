@@ -4,8 +4,8 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 
+	game_models "github.com/TtMyth123/GameServer/models"
 	_ "github.com/go-sql-driver/mysql"
-	game_models "ttmyth123/GroupLottery/GameServer/models"
 )
 
 func Init() {

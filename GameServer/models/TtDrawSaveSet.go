@@ -1,9 +1,9 @@
 package models
 
 import (
+	"github.com/TtMyth123/GameServer/models/mconst"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
 )
 
 type TtDrawSaveSet struct {

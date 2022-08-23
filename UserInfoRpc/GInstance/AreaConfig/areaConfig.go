@@ -1,8 +1,8 @@
 package AreaConfig
 
 import (
+	"github.com/TtMyth123/GameServer/models"
 	"sync"
-	"ttmyth123/GroupLottery/GameServer/models"
 )
 
 var (

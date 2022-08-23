@@ -2,14 +2,14 @@ package Game28ResultKit
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/LotteryResult/Game28ResultKit/Game28Const"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/kit/lotteryKit"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/timeKit"
 	"strconv"
 	"strings"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/Game28ResultKit/Game28Const"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/kit/lotteryKit"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/timeKit"
 )
 
 var (

@@ -2,10 +2,10 @@ package GData
 
 import (
 	"fmt"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"sync"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/ttLog"
 )
 
 var aStaffDataManage *StaffDataManage

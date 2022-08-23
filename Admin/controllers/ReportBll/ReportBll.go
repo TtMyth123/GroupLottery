@@ -3,17 +3,17 @@ package ReportBll
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/TtMyth123/Admin/CacheData"
+	"github.com/TtMyth123/Admin/controllers/ReportBll/Chart"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	userConst "github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"strings"
 	"time"
-	"ttmyth123/GroupLottery/Admin/CacheData"
-	"ttmyth123/GroupLottery/Admin/controllers/ReportBll/Chart"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	userConst "ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/ttLog"
 
-	gameCacheData "ttmyth123/GroupLottery/GameServer/CacheData"
+	gameCacheData "github.com/TtMyth123/GameServer/CacheData"
 )
 
 type GroupBetInfo struct {

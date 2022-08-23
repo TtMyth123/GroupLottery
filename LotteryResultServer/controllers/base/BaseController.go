@@ -3,11 +3,11 @@ package base
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/TtMyth123/LotteryResultServer/controllers/base/cBo"
+	"github.com/TtMyth123/LotteryResultServer/controllers/base/enums"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/LotteryResultServer/controllers/base/cBo"
-	"ttmyth123/GroupLottery/LotteryResultServer/controllers/base/enums"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 var isDev = false

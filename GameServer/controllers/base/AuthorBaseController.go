@@ -1,6 +1,6 @@
 package base
 
-import "ttmyth123/GroupLottery/GameServer/controllers/base/enums"
+import "github.com/TtMyth123/GameServer/controllers/base/enums"
 
 var (
 	Secret     = "dong_tech" // 加盐

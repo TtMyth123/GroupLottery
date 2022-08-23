@@ -1,6 +1,6 @@
 package base
 
-import "ttmyth123/GroupLottery/LotteryResultSite/controllers/base/enums"
+import "github.com/TtMyth123/LotteryResultSite/controllers/base/enums"
 
 type JsonResult struct {
 	Code enums.JsonResultCode `json:"code"`

@@ -2,14 +2,14 @@ package SetBll
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Admin/GInstance"
+	"github.com/TtMyth123/Admin/OtherServer/GameClientHttp"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/Admin/GInstance"
-	"ttmyth123/GroupLottery/Admin/OtherServer/GameClientHttp"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/ttLog"
 )
 
 func GetOddsList(gameType int, arrBigType []int) ([]models.LoOddsInfo, error) {

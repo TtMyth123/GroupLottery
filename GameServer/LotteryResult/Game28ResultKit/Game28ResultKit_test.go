@@ -2,10 +2,10 @@ package Game28ResultKit
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/LotteryResult/Game28ResultKit/Game28Const"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/kit/stringKit"
 	"testing"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/Game28ResultKit/Game28Const"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/kit/stringKit"
 )
 
 func TestComputeLoseWin(t *testing.T) {

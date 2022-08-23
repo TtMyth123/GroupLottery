@@ -1,12 +1,12 @@
 package test
 
 import (
+	_ "github.com/TtMyth123/Staff/routers"
 	"net/http"
 	"net/http/httptest"
 	"path/filepath"
 	"runtime"
 	"testing"
-	_ "ttmyth123/GroupLottery/Staff/routers"
 
 	"github.com/astaxie/beego"
 	. "github.com/smartystreets/goconvey/convey"

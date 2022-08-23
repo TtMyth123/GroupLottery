@@ -3,30 +3,30 @@ package Game28Server
 import (
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/CacheData"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/LotteryResult/Game28ResultKit"
+	"github.com/TtMyth123/GameServer/LotteryServer"
+	"github.com/TtMyth123/GameServer/LotteryServer/LotteryBox"
+	"github.com/TtMyth123/GameServer/OtherServer/httpGameServer"
+	"github.com/TtMyth123/GameServer/OtherServer/httpGameServer/httpBox"
+	"github.com/TtMyth123/GameServer/OtherServer/httpGameServer/httpConst"
+	"github.com/TtMyth123/GameServer/controllers/base/TtError"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	"github.com/TtMyth123/UserInfoRpc/UserRpcClient"
+	userModels "github.com/TtMyth123/UserInfoRpc/models"
+	userConst "github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit"
+	"github.com/TtMyth123/kit/lotteryKit"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"sync"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/CacheData"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/Game28ResultKit"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer/LotteryBox"
-	"ttmyth123/GroupLottery/GameServer/OtherServer/httpGameServer"
-	"ttmyth123/GroupLottery/GameServer/OtherServer/httpGameServer/httpBox"
-	"ttmyth123/GroupLottery/GameServer/OtherServer/httpGameServer/httpConst"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/TtError"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/UserRpcClient"
-	userModels "ttmyth123/GroupLottery/UserInfoRpc/models"
-	userConst "ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit"
-	"ttmyth123/kit/lotteryKit"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type OddsInfo struct {
@@ -262,7 +262,7 @@ func (this *Game28Server) NewAwardInfo(newLoAwardInfo models.LoAwardInfo) {
 		if groupBet.Win == 0 {
 			continue
 		}
-		goldInfo := gBox.AddGoldInfo{GroupId:groupBet.GroupUserId, UserId: groupBet.UserId, Gold: groupBet.Win,
+		goldInfo := gBox.AddGoldInfo{GroupId: groupBet.GroupUserId, UserId: groupBet.UserId, Gold: groupBet.Win,
 			T:    userConst.Account_02_Win,
 			Des:  fmt.Sprintf("%s第%s期，[%s]投注%d元, 赢得%g", mconst.GetGameName(this.GameType), newLoAwardInfo.LotteryStr, groupBet.BetSn, groupBet.BetM, groupBet.Win),
 			Des2: GTtHint.GetTtHint().GetHint("%s第%s期，[%s]投注%d元, 赢得%g"), DesMp: GTtHint.GetTtHint().GetMpString(mconst.GetGameName(this.GameType), newLoAwardInfo.LotteryStr, groupBet.BetSn, groupBet.BetM, groupBet.Win)}

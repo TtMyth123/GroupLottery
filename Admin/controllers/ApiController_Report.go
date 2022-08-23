@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/Admin/controllers/ReportBll"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
+	"github.com/TtMyth123/Admin/controllers/ReportBll"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
 )
 
 func (c *ApiController) GetGroupBetList() {

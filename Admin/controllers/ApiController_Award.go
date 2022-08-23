@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"fmt"
-	"ttmyth123/GroupLottery/Admin/OtherServer/GameClientHttp"
-	"ttmyth123/GroupLottery/Admin/controllers/AwardBll"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
+	"github.com/TtMyth123/Admin/OtherServer/GameClientHttp"
+	"github.com/TtMyth123/Admin/controllers/AwardBll"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
 )
 
 func (c *ApiController) GetAwardList() {

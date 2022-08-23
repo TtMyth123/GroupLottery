@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/LotteryResultServer/controllers/base"
-	"ttmyth123/GroupLottery/LotteryResultServer/controllers/uscBll"
+	"github.com/TtMyth123/LotteryResultServer/controllers/base"
+	"github.com/TtMyth123/LotteryResultServer/controllers/uscBll"
 )
 
 type ApiController struct {

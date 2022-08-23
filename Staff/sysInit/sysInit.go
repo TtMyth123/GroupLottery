@@ -1,15 +1,15 @@
 package sysInit
 
 import (
-	"ttmyth123/GroupLottery/Staff/CacheData"
-	"ttmyth123/GroupLottery/Staff/GConfig"
-	"ttmyth123/GroupLottery/Staff/GData"
-	"ttmyth123/GroupLottery/Staff/GData/chat"
-	"ttmyth123/GroupLottery/Staff/GInstance"
-	"ttmyth123/GroupLottery/Staff/OtherServer/httpGameServer"
-	"ttmyth123/GroupLottery/Staff/models"
-	"ttmyth123/GroupLottery/Staff/routers"
-	"ttmyth123/kit/ttLog"
+	"github.com/TtMyth123/Staff/CacheData"
+	"github.com/TtMyth123/Staff/GConfig"
+	"github.com/TtMyth123/Staff/GData"
+	"github.com/TtMyth123/Staff/GData/chat"
+	"github.com/TtMyth123/Staff/GInstance"
+	"github.com/TtMyth123/Staff/OtherServer/httpGameServer"
+	"github.com/TtMyth123/Staff/models"
+	"github.com/TtMyth123/Staff/routers"
+	"github.com/TtMyth123/kit/ttLog"
 )
 
 func Init() {

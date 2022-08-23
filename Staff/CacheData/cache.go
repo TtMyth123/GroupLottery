@@ -2,10 +2,10 @@ package CacheData
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Staff/controllers/base/box"
+	"github.com/TtMyth123/kit/beegoCacheKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/Staff/controllers/base/box"
-	"ttmyth123/kit/beegoCacheKit"
-	"ttmyth123/kit/ttLog"
 )
 
 var mBeegoCache *beegoCacheKit.BeegoCache

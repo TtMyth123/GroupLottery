@@ -1,12 +1,12 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/GameServer/GInstance"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/controllers/base"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/enums"
-	"ttmyth123/GroupLottery/GameServer/controllers/financeBll"
-	"ttmyth123/GroupLottery/GameServer/controllers/otherBll"
+	"github.com/TtMyth123/GameServer/GInstance"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/controllers/base"
+	"github.com/TtMyth123/GameServer/controllers/base/enums"
+	"github.com/TtMyth123/GameServer/controllers/financeBll"
+	"github.com/TtMyth123/GameServer/controllers/otherBll"
 )
 
 /**

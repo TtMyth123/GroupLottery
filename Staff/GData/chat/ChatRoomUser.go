@@ -1,8 +1,8 @@
 package chat
 
 import (
-	"ttmyth123/GroupLottery/Staff/GInstance"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/UserServer/RpcBox"
+	"github.com/TtMyth123/Staff/GInstance"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/UserServer/RpcBox"
 )
 
 const defLen = 100

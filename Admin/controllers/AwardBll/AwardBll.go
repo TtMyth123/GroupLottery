@@ -3,18 +3,18 @@ package AwardBll
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxBbcResultKit"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxNbcResultKit"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxZbcResultKit"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"strings"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxBbcResultKit"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxNbcResultKit"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxZbcResultKit"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/ttLog"
 
-	gmconst "ttmyth123/GroupLottery/GameServer/models/mconst"
+	gmconst "github.com/TtMyth123/GameServer/models/mconst"
 )
 
 type GroupAwardInfo struct {

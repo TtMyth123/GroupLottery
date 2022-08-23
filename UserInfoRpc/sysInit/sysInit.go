@@ -1,13 +1,13 @@
 package sysInit
 
 import (
-	game_models "ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/UserInfoRpc/GConfig"
-	"ttmyth123/GroupLottery/UserInfoRpc/GInstance/AreaConfig"
-	"ttmyth123/GroupLottery/UserInfoRpc/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/GroupLottery/UserInfoRpc/routers"
-	"ttmyth123/kit/ttLog"
+	game_models "github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/UserInfoRpc/GConfig"
+	"github.com/TtMyth123/UserInfoRpc/GInstance/AreaConfig"
+	"github.com/TtMyth123/UserInfoRpc/GInstance/GTtHint"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/UserInfoRpc/routers"
+	"github.com/TtMyth123/kit/ttLog"
 )
 
 func Init() {

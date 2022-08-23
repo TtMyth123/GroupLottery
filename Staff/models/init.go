@@ -1,10 +1,10 @@
 package models
 
 import (
+	"github.com/TtMyth123/UserInfoRpc/models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
 )
 
 func Init() {

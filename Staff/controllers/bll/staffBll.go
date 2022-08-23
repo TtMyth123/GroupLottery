@@ -2,13 +2,13 @@ package bll
 
 import (
 	"errors"
+	"github.com/TtMyth123/Staff/GInstance"
+	"github.com/TtMyth123/Staff/OtherServer/httpGameServer"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/pwdKit"
 	"github.com/astaxie/beego/orm"
-	"ttmyth123/GroupLottery/Staff/GInstance"
-	"ttmyth123/GroupLottery/Staff/OtherServer/httpGameServer"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/pwdKit"
 )
 
 func Login(userName, pwd string) (models.TtGameUser, error) {

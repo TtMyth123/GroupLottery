@@ -2,12 +2,12 @@ package chatBll
 
 import (
 	"fmt"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/UserServer/RpcBox"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/UserServer/RpcBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type RoomChatInfo struct {

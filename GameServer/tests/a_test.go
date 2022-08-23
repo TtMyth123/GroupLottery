@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/TtMyth123/kit/pwdKit"
+	"path/filepath"
 	"testing"
-	"ttmyth123/kit/pwdKit"
 )
 
 func TestAA(t *testing.T) {
@@ -34,4 +35,10 @@ func getEnd(str string, n int) string {
 		return str[i:]
 	}
 	return str
+}
+
+func TestAAB(t *testing.T) {
+	Path := `C:\path\tmp\aaa.png`
+	ext := filepath.Ext(Path)
+	fmt.Println(ext, " ", Path)
 }

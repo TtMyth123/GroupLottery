@@ -1,9 +1,9 @@
 package models
 
 import (
+	"github.com/TtMyth123/Admin/models/mconst"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/Admin/models/mconst"
 )
 
 type SysLog struct {

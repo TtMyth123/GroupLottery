@@ -3,18 +3,18 @@ package UscServer
 import (
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/LotteryResult/UscResultServer/UscBox"
+	"github.com/TtMyth123/GameServer/LotteryServer/LotteryBox"
+	"github.com/TtMyth123/GameServer/controllers/base/TtError"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/UserRpcClient"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"sync"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/UscResultServer/UscBox"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer/LotteryBox"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/TtError"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/UserRpcClient"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type BaseUscServer struct {

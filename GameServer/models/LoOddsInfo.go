@@ -2,15 +2,15 @@ package models
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/LotteryResult/Game28ResultKit/Game28Const"
+	"github.com/TtMyth123/GameServer/LotteryResult/UscResultKit/Usc10Kit"
+	"github.com/TtMyth123/GameServer/LotteryResult/UscResultKit/Usc5Kit"
+	"github.com/TtMyth123/GameServer/LotteryResult/UscResultKit/Usc8for20Kit"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxConst"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/Game28ResultKit/Game28Const"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/UscResultKit/Usc10Kit"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/UscResultKit/Usc5Kit"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/UscResultKit/Usc8for20Kit"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxConst"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/ttLog"
 )
 
 type LoOddsInfo struct {

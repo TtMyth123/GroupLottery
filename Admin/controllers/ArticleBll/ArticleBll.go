@@ -2,12 +2,12 @@ package ArticleBll
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/sqlKit"
 	"github.com/astaxie/beego/orm"
 	"io/ioutil"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/sqlKit"
 )
 
 type Notice struct {

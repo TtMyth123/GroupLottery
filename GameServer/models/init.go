@@ -1,9 +1,9 @@
 package models
 
 import (
+	user_models "github.com/TtMyth123/UserInfoRpc/models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	user_models "ttmyth123/GroupLottery/UserInfoRpc/models"
 
 	_ "github.com/go-sql-driver/mysql"
 )

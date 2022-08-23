@@ -1,14 +1,14 @@
 package controllers
 
 import (
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/httpKit/TmpFileKit"
 	"github.com/astaxie/beego/orm"
 	"os"
 	//"ttmyth123/DummyMarket/YhFilmAdmin/controllers/cBll"
-	"ttmyth123/GroupLottery/Admin/controllers/ArticleBll"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/httpKit/TmpFileKit"
+	"github.com/TtMyth123/Admin/controllers/ArticleBll"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
 )
 
 func (c *ApiController) GetArticleList() {

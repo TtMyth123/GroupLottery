@@ -4,17 +4,17 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/GConfig"
+	"github.com/TtMyth123/GameServer/OtherServer/httpGameServer/httpBox"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/httpClientKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"strings"
 	"sync"
-	"ttmyth123/GroupLottery/GameServer/GConfig"
-	"ttmyth123/GroupLottery/GameServer/OtherServer/httpGameServer/httpBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/httpClientKit"
-	"ttmyth123/kit/ttLog"
 
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
+	"github.com/TtMyth123/UserInfoRpc/models"
 )
 
 var (

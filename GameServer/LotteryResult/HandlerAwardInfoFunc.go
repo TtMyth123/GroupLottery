@@ -1,5 +1,5 @@
 package LotteryResult
 
-import "ttmyth123/GroupLottery/GameServer/models"
+import "github.com/TtMyth123/GameServer/models"
 
 type HandlerAwardInfoFunc func(models.LoAwardInfo)

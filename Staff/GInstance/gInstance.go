@@ -1,8 +1,8 @@
 package GInstance
 
 import (
+	"github.com/TtMyth123/UserInfoRpc/UserRpcClient"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/UserInfoRpc/UserRpcClient"
 )
 
 var (

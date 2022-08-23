@@ -3,12 +3,12 @@ package controllers
 import (
 	"errors"
 	"fmt"
-	"ttmyth123/GroupLottery/GameServer/GInstance"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer/LotteryBox"
-	"ttmyth123/GroupLottery/GameServer/controllers/base"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/enums"
-	"ttmyth123/kit/strconvEx"
+	"github.com/TtMyth123/GameServer/GInstance"
+	"github.com/TtMyth123/GameServer/LotteryServer"
+	"github.com/TtMyth123/GameServer/LotteryServer/LotteryBox"
+	"github.com/TtMyth123/GameServer/controllers/base"
+	"github.com/TtMyth123/GameServer/controllers/base/enums"
+	"github.com/TtMyth123/kit/strconvEx"
 )
 
 type ApiController struct {

@@ -1,11 +1,11 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/Admin/controllers/SysBll"
-	"ttmyth123/GroupLottery/Admin/controllers/base"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/GroupLottery/Admin/models"
-	"ttmyth123/GroupLottery/Admin/models/mconst"
+	"github.com/TtMyth123/Admin/controllers/SysBll"
+	"github.com/TtMyth123/Admin/controllers/base"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/Admin/models"
+	"github.com/TtMyth123/Admin/models/mconst"
 )
 
 type SysController struct {

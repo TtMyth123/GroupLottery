@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/controllers/base"
+	"github.com/TtMyth123/GameServer/controllers/base/enums"
+	"github.com/TtMyth123/kit/httpClientKit"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/GameServer/controllers/base"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/enums"
-	"ttmyth123/kit/httpClientKit"
 )
 
 var (

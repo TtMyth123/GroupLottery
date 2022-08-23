@@ -3,12 +3,12 @@ package UserRpcClient
 import (
 	"context"
 	"errors"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	"github.com/TtMyth123/UserInfoRpc/GInstance/AreaConfig"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/RpcConst"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/UserServer/RpcBox"
+	"github.com/TtMyth123/UserInfoRpc/models"
 	"github.com/smallnest/rpcx/client"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/GInstance/AreaConfig"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/RpcConst"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/UserServer/RpcBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
 )
 
 type RpcClient struct {

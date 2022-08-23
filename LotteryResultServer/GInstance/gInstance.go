@@ -1,13 +1,13 @@
 package GInstance
 
 import (
+	"github.com/TtMyth123/GameServer/LotteryResult/UscResultServer/UscBox"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/LotteryResultServer/GInstance/Lottery28Game"
+	"github.com/TtMyth123/LotteryResultServer/GInstance/LotteryUscGame"
+	"github.com/TtMyth123/LotteryResultServer/GInstance/lottery"
 	"github.com/astaxie/beego"
 	"sync"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/UscResultServer/UscBox"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/LotteryResultServer/GInstance/Lottery28Game"
-	"ttmyth123/GroupLottery/LotteryResultServer/GInstance/LotteryUscGame"
-	"ttmyth123/GroupLottery/LotteryResultServer/GInstance/lottery"
 )
 
 var (

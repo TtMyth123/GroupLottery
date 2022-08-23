@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/GConfig"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/timeKit"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/GConfig"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/timeKit"
 )
 
 type BaseLotteryServer struct {

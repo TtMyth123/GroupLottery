@@ -2,11 +2,11 @@ package WsxBbcResultKit
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxBox"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/stringKit"
 	"testing"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxBox"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/stringKit"
 )
 
 func TestAA(t *testing.T) {

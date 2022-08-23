@@ -2,12 +2,12 @@ package models
 
 import (
 	"encoding/json"
+	"github.com/TtMyth123/UserInfoRpc/GConfig"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/httpKit"
+	"github.com/TtMyth123/kit/timeKit"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/UserInfoRpc/GConfig"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/httpKit"
-	"ttmyth123/kit/timeKit"
 )
 
 type TtChatInfo struct {

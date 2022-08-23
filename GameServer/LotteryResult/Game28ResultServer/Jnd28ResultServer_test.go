@@ -2,8 +2,8 @@ package Game28ResultServer
 
 import (
 	"fmt"
+	"github.com/TtMyth123/kit/stringKit"
 	"testing"
-	"ttmyth123/kit/stringKit"
 )
 
 func TestMap2AAA(t *testing.T) {

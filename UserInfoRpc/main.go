@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/TtMyth123/UserInfoRpc/RpcServer"
+	_ "github.com/TtMyth123/UserInfoRpc/routers"
+	"github.com/TtMyth123/UserInfoRpc/sysInit"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer"
-	_ "ttmyth123/GroupLottery/UserInfoRpc/routers"
-	"ttmyth123/GroupLottery/UserInfoRpc/sysInit"
 )
 
 func main() {

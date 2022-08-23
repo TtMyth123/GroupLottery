@@ -3,13 +3,13 @@ package UscResultServer
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/TtMyth123/GameServer/LotteryResult"
+	"github.com/TtMyth123/GameServer/LotteryResult/UscResultServer/UscBox"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/kit/httpClientKit"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/UscResultServer/UscBox"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/kit/httpClientKit"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type UscResultServer struct {

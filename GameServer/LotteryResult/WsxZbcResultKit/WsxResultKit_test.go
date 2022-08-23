@@ -2,9 +2,9 @@ package WsxZbcResultKit
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxBox"
+	"github.com/TtMyth123/GameServer/models"
 	"testing"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxBox"
-	"ttmyth123/GroupLottery/GameServer/models"
 )
 
 func TestComputeLoseWin(t *testing.T) {

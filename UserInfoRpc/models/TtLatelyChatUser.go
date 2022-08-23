@@ -1,9 +1,9 @@
 package models
 
 import (
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
 )
 
 type TtLatelyChatUser struct {

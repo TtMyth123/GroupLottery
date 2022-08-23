@@ -2,10 +2,10 @@ package base
 
 import (
 	"encoding/json"
+	"github.com/TtMyth123/LotteryResultSite/controllers/base/enums"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/LotteryResultSite/controllers/base/enums"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type ABaseController struct {

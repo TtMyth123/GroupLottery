@@ -1,6 +1,6 @@
 package testData
 
-import "ttmyth123/kit/timeKit"
+import "github.com/TtMyth123/kit/timeKit"
 
 var (
 	ChatId      int64

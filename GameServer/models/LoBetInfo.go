@@ -1,9 +1,9 @@
 package models
 
 import (
+	"github.com/TtMyth123/GameServer/models/mconst"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
 )
 
 type LoBetInfo struct {
@@ -21,14 +21,14 @@ type LoBetInfo struct {
 	OddsType    int     //赔率类型
 	BigOddsType int     //大赔率类型
 	Nums        string
-	BetM        int       //投注金额
-	Win         float64   //赢得金额
-	RcRatio     float64   //返现比例
-	RcMoney     float64   //返现金额
-	ResultNums  string    `orm:"size(1024)"`
-	GameType    int       //游戏类型
-	GameName    string    `orm:"size(100)"`
-	UserId      int       //用户ID
+	BetM        int     //投注金额
+	Win         float64 //赢得金额
+	RcRatio     float64 //返现比例
+	RcMoney     float64 //返现金额
+	ResultNums  string  `orm:"size(1024)"`
+	GameType    int     //游戏类型
+	GameName    string  `orm:"size(100)"`
+	UserId      int     //用户ID
 	GroupUserId int
 	CreatedAt   time.Time `orm:"auto_now_add;type(datetime)"`
 	UpdatedAt   time.Time `orm:"auto_now;type(datetime)"`

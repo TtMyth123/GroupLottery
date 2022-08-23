@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/TtMyth123/kit/pwdKit"
 	"strings"
 	"testing"
-	"ttmyth123/kit/pwdKit"
 )
 
 func TestAA(t *testing.T) {

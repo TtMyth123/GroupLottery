@@ -3,19 +3,19 @@ package SysBll
 import (
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/Admin/GInstance"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/Admin/GInstance"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
 
+	"github.com/TtMyth123/kit/pwdKit"
+	"github.com/TtMyth123/kit/ttLog"
 	//"ttmyth123/AdminLite/models/mConst"
-	"ttmyth123/GroupLottery/Admin/CacheData"
-	"ttmyth123/GroupLottery/Admin/models"
-	"ttmyth123/GroupLottery/Admin/models/mconst"
-	"ttmyth123/kit/pwdKit"
-	"ttmyth123/kit/ttLog"
+	"github.com/TtMyth123/Admin/CacheData"
+	"github.com/TtMyth123/Admin/models"
+	"github.com/TtMyth123/Admin/models/mconst"
 
-	u_models "ttmyth123/GroupLottery/UserInfoRpc/models"
+	u_models "github.com/TtMyth123/UserInfoRpc/models"
 )
 
 func GetSysMenuList(userId int, IsSuper bool) []*models.GroupMenu {

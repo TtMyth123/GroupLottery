@@ -1,6 +1,6 @@
 package LotteryServer
 
-import "ttmyth123/GroupLottery/GameServer/LotteryServer/LotteryBox"
+import "github.com/TtMyth123/GameServer/LotteryServer/LotteryBox"
 
 type ILotteryServer interface {
 	ReLoadOddsInfo()

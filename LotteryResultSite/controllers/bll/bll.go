@@ -2,11 +2,11 @@ package bll
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/LotteryResultSite/controllers/bll/bllBo"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/LotteryResultSite/controllers/bll/bllBo"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/ttLog"
 )
 
 func GetAwardList(LotteryStr, strDay string, gameType int, pageIndex, pageSize, MaxId int) ([]bllBo.AwardInfo, bllBo.GroupAwardInfo) {

@@ -1,12 +1,12 @@
 package WsxNbcResultKit
 
 import (
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxBox"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxConst"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/stringKit"
 	"strings"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxBox"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxConst"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/stringKit"
 )
 
 var (

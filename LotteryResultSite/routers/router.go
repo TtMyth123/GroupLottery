@@ -1,8 +1,8 @@
 package routers
 
 import (
+	"github.com/TtMyth123/LotteryResultSite/controllers"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/LotteryResultSite/controllers"
 )
 
 func Init() {

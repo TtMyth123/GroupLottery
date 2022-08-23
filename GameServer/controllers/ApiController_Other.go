@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"errors"
-	"ttmyth123/GroupLottery/GameServer/GInstance"
-	"ttmyth123/GroupLottery/GameServer/controllers/base"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/enums"
-	"ttmyth123/GroupLottery/GameServer/controllers/otherBll"
-	"ttmyth123/GroupLottery/UserInfoRpc/GInstance/AreaConfig"
+	"github.com/TtMyth123/GameServer/GInstance"
+	"github.com/TtMyth123/GameServer/controllers/base"
+	"github.com/TtMyth123/GameServer/controllers/base/enums"
+	"github.com/TtMyth123/GameServer/controllers/otherBll"
+	"github.com/TtMyth123/UserInfoRpc/GInstance/AreaConfig"
 )
 
 /**

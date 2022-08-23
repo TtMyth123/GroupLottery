@@ -1,10 +1,10 @@
 package models
 
 import (
+	g_mconst "github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
-	g_mconst "ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/ttLog"
 )
 
 type TtAreaRefGame struct {

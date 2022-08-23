@@ -3,14 +3,14 @@ package Lottery28Game
 import (
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/LotteryResultServer/GInstance/lottery"
+	"github.com/TtMyth123/kit/httpClientKit"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/timeKit"
 	"github.com/astaxie/beego"
 	"sync"
 	"time"
-	"ttmyth123/GroupLottery/LotteryResultServer/GInstance/lottery"
-	"ttmyth123/kit/httpClientKit"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/timeKit"
 )
 
 type Game7710Jnd28 struct {

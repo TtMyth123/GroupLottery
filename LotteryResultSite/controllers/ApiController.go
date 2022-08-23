@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/LotteryResultSite/controllers/base"
-	"ttmyth123/GroupLottery/LotteryResultSite/controllers/base/enums"
-	"ttmyth123/GroupLottery/LotteryResultSite/controllers/bll"
+	"github.com/TtMyth123/LotteryResultSite/controllers/base"
+	"github.com/TtMyth123/LotteryResultSite/controllers/base/enums"
+	"github.com/TtMyth123/LotteryResultSite/controllers/bll"
 )
 
 type ApiController struct {

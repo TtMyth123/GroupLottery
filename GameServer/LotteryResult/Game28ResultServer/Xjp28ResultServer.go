@@ -2,15 +2,15 @@ package Game28ResultServer
 
 import (
 	"encoding/json"
+	"github.com/TtMyth123/GameServer/LotteryResult"
+	"github.com/TtMyth123/GameServer/LotteryResult/ResultBox"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/kit/httpClientKit"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/timeKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/ResultBox"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/kit/httpClientKit"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/timeKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type Xjp28ResultServer struct {

@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/Admin/controllers/UserBll"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
+	"github.com/TtMyth123/Admin/controllers/UserBll"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
 )
 
 /**

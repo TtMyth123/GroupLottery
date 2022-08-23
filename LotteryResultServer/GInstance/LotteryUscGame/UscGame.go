@@ -2,11 +2,11 @@ package LotteryUscGame
 
 import (
 	"fmt"
+	"github.com/TtMyth123/LotteryResultServer/GInstance/lottery"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/timeKit"
 	"strings"
 	"time"
-	"ttmyth123/GroupLottery/LotteryResultServer/GInstance/lottery"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/timeKit"
 )
 
 type UscGameR struct {

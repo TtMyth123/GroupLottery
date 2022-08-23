@@ -2,27 +2,27 @@ package models
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/models/mconst"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
 )
 
 type LoBetGroupInfo struct {
-	Id         int
-	BetSn      string `orm:"size(56)"`
-	BetStr     string `orm:"size(1024)"`
-	Status     int
-	Period     int64
-	StrPeriod  string `orm:"size(20)"`
-	ResultNums string `orm:"size(1024)"`
-	BetM       int
-	Win        float64
-	GameType   int
-	UserId     int
+	Id          int
+	BetSn       string `orm:"size(56)"`
+	BetStr      string `orm:"size(1024)"`
+	Status      int
+	Period      int64
+	StrPeriod   string `orm:"size(20)"`
+	ResultNums  string `orm:"size(1024)"`
+	BetM        int
+	Win         float64
+	GameType    int
+	UserId      int
 	GroupUserId int
-	GameName   string    `orm:"size(100)"`
-	CreatedAt  time.Time `orm:"auto_now_add;type(datetime)"`
-	UpdatedAt  time.Time `orm:"auto_now;type(datetime)"`
+	GameName    string    `orm:"size(100)"`
+	CreatedAt   time.Time `orm:"auto_now_add;type(datetime)"`
+	UpdatedAt   time.Time `orm:"auto_now;type(datetime)"`
 }
 
 func (this *LoBetGroupInfo) TableName() string {

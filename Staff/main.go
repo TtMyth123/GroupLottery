@@ -1,9 +1,9 @@
 package main
 
 import (
+	_ "github.com/TtMyth123/Staff/routers"
+	"github.com/TtMyth123/Staff/sysInit"
 	"github.com/astaxie/beego"
-	_ "ttmyth123/GroupLottery/Staff/routers"
-	"ttmyth123/GroupLottery/Staff/sysInit"
 )
 
 func main() {

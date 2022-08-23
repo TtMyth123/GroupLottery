@@ -1,11 +1,11 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/Admin/CacheData"
+	"github.com/TtMyth123/Admin/CacheData"
+	"github.com/TtMyth123/kit/httpKit/TmpFileKit"
 	//"ttmyth123/DummyMarket/YhFilmAdmin/CacheData"
-	"ttmyth123/GroupLottery/Admin/controllers/AFinanceBll"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/kit/httpKit/TmpFileKit"
+	"github.com/TtMyth123/Admin/controllers/AFinanceBll"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
 )
 
 func (this *ApiController) GetSaveDrawApplyInfo() {

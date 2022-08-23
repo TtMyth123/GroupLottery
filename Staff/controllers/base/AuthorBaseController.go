@@ -1,10 +1,10 @@
 package base
 
 import (
-	"ttmyth123/GroupLottery/Staff/CacheData"
-	"ttmyth123/GroupLottery/Staff/GConfig"
-	"ttmyth123/GroupLottery/Staff/controllers/base/box"
-	"ttmyth123/GroupLottery/Staff/controllers/base/enums"
+	"github.com/TtMyth123/Staff/CacheData"
+	"github.com/TtMyth123/Staff/GConfig"
+	"github.com/TtMyth123/Staff/controllers/base/box"
+	"github.com/TtMyth123/Staff/controllers/base/enums"
 )
 
 var (

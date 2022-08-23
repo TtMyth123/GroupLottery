@@ -2,13 +2,13 @@ package RpcBox
 
 import (
 	"encoding/json"
+	"github.com/TtMyth123/UserInfoRpc/GConfig"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	"github.com/TtMyth123/UserInfoRpc/GInstance/AreaConfig"
+	"github.com/TtMyth123/UserInfoRpc/models"
+	"github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/timeKit"
 	"time"
-	"ttmyth123/GroupLottery/UserInfoRpc/GConfig"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/GInstance/AreaConfig"
-	"ttmyth123/GroupLottery/UserInfoRpc/models"
-	"ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/timeKit"
 )
 
 type ArgsGetUser struct {

@@ -3,13 +3,13 @@ package base
 import (
 	"encoding/json"
 	"errors"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/kit/beegoCacheKit"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
 	"github.com/dgrijalva/jwt-go"
 	"time"
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/kit/beegoCacheKit"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type ABaseController struct {

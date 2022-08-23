@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/kit/httpClientKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
 	"strings"
-	"ttmyth123/kit/httpClientKit"
-	"ttmyth123/kit/ttLog"
 )
 
 var (

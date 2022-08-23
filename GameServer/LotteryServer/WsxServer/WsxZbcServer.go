@@ -4,30 +4,30 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/CacheData"
+	"github.com/TtMyth123/GameServer/GConfig"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxBox"
+	"github.com/TtMyth123/GameServer/LotteryResult/WsxZbcResultKit"
+	"github.com/TtMyth123/GameServer/LotteryServer"
+	"github.com/TtMyth123/GameServer/LotteryServer/LotteryBox"
+	"github.com/TtMyth123/GameServer/controllers/base/TtError"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	"github.com/TtMyth123/UserInfoRpc/UserRpcClient"
+	userModels "github.com/TtMyth123/UserInfoRpc/models"
+	userConst "github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/strconvEx"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/timeKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"strconv"
 	"sync"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/CacheData"
-	"ttmyth123/GroupLottery/GameServer/GConfig"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxBox"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/WsxZbcResultKit"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer/LotteryBox"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/TtError"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	"ttmyth123/GroupLottery/UserInfoRpc/UserRpcClient"
-	userModels "ttmyth123/GroupLottery/UserInfoRpc/models"
-	userConst "ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/strconvEx"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/timeKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type WsxZbcServer struct {
@@ -257,7 +257,7 @@ func (this *WsxZbcServer) processorNotOpenBet(LotteryStr string) {
 		groupBet.Status = mconst.Bet_Status_3
 		groupBet.Update(o, "Status", "Win")
 
-		goldInfo := gBox.AddGoldInfo{GroupId: groupBet.GroupUserId,UserId: groupBet.UserId, Gold: float64(groupBet.BetM),
+		goldInfo := gBox.AddGoldInfo{GroupId: groupBet.GroupUserId, UserId: groupBet.UserId, Gold: float64(groupBet.BetM),
 			T:    userConst.Account_14_NotOpen,
 			Des:  fmt.Sprintf("%s第%s期不开奖，[%s]投注%d元, 退款%d", mconst.GetGameName(this.GameType), LotteryStr, groupBet.BetSn, groupBet.BetM, groupBet.BetM),
 			Des2: GTtHint.GetTtHint().GetHint("%s第%s期不开奖，[%s]投注%d元, 退款%d"), DesMp: GTtHint.GetTtHint().GetMpString(mconst.GetGameName(this.GameType), LotteryStr, groupBet.BetSn, groupBet.BetM, groupBet.BetM)}

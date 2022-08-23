@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/routers"
+	"github.com/TtMyth123/GameServer/sysInit"
+	"github.com/TtMyth123/kit"
 	"github.com/astaxie/beego"
 	"os"
-	"ttmyth123/GroupLottery/GameServer/routers"
-	"ttmyth123/GroupLottery/GameServer/sysInit"
-	"ttmyth123/kit"
 )
 
 func main() {

@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Staff/controllers/base"
+	"github.com/TtMyth123/Staff/controllers/base/enums"
+	"github.com/TtMyth123/Staff/controllers/bll"
+	"github.com/TtMyth123/kit/stringKit"
 	"io/ioutil"
-	"ttmyth123/GroupLottery/Staff/controllers/base"
-	"ttmyth123/GroupLottery/Staff/controllers/base/enums"
-	"ttmyth123/GroupLottery/Staff/controllers/bll"
-	"ttmyth123/kit/stringKit"
 )
 
 type ChatController struct {

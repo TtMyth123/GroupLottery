@@ -2,13 +2,13 @@ package controllers
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Staff/CacheData"
+	"github.com/TtMyth123/Staff/controllers/base"
+	"github.com/TtMyth123/Staff/controllers/base/box"
+	"github.com/TtMyth123/Staff/controllers/base/enums"
+	"github.com/TtMyth123/Staff/controllers/bll"
 	"strings"
 	"time"
-	"ttmyth123/GroupLottery/Staff/CacheData"
-	"ttmyth123/GroupLottery/Staff/controllers/base"
-	"ttmyth123/GroupLottery/Staff/controllers/base/box"
-	"ttmyth123/GroupLottery/Staff/controllers/base/enums"
-	"ttmyth123/GroupLottery/Staff/controllers/bll"
 )
 
 type LoginRegController struct {

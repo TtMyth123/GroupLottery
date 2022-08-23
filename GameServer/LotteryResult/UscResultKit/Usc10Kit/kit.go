@@ -3,8 +3,8 @@ package Usc10Kit
 import (
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/kit/lotteryKit"
 	"strconv"
-	"ttmyth123/kit/lotteryKit"
 )
 
 type Award struct {

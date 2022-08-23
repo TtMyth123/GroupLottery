@@ -1,6 +1,6 @@
 package UscBox
 
-import "ttmyth123/GroupLottery/GameServer/models/mconst"
+import "github.com/TtMyth123/GameServer/models/mconst"
 
 const FT48Count = 48
 const (

@@ -1,9 +1,9 @@
 package RpcServer
 
 import (
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/RpcConst"
-	"ttmyth123/GroupLottery/UserInfoRpc/RpcServer/UserServer"
-	"ttmyth123/kit/ttLog"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/RpcConst"
+	"github.com/TtMyth123/UserInfoRpc/RpcServer/UserServer"
+	"github.com/TtMyth123/kit/ttLog"
 
 	"github.com/smallnest/rpcx/server"
 )

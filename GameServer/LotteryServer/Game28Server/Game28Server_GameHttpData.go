@@ -1,12 +1,12 @@
 package Game28Server
 
 import (
+	"github.com/TtMyth123/GameServer/LotteryResult/Game28ResultKit"
+	"github.com/TtMyth123/GameServer/OtherServer/httpGameServer"
+	"github.com/TtMyth123/GameServer/OtherServer/httpGameServer/httpBox"
+	"github.com/TtMyth123/GameServer/OtherServer/httpGameServer/httpConst"
+	"github.com/TtMyth123/GameServer/models/mconst"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/Game28ResultKit"
-	"ttmyth123/GroupLottery/GameServer/OtherServer/httpGameServer"
-	"ttmyth123/GroupLottery/GameServer/OtherServer/httpGameServer/httpBox"
-	"ttmyth123/GroupLottery/GameServer/OtherServer/httpGameServer/httpConst"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
 )
 
 type GameHttpData struct {

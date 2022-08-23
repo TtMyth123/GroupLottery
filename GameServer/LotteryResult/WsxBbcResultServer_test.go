@@ -2,10 +2,10 @@ package LotteryResult
 
 import (
 	"fmt"
+	"github.com/TtMyth123/GameServer/controllers/base/TtError"
+	"github.com/TtMyth123/kit"
+	"github.com/TtMyth123/kit/stringKit"
 	"testing"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/TtError"
-	"ttmyth123/kit"
-	"ttmyth123/kit/stringKit"
 )
 
 func TestAA(t *testing.T) {

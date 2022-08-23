@@ -2,10 +2,10 @@ package models
 
 import (
 	"fmt"
+	"github.com/TtMyth123/Admin/models/mconst"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/Admin/models/mconst"
-	"ttmyth123/kit/ttLog"
 )
 
 type SysUserMenuRel struct {

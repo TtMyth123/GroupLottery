@@ -3,12 +3,12 @@ package models
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/TtMyth123/GameServer/GConfig"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/timeKit"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/GConfig"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/timeKit"
 )
 
 /**
@@ -17,7 +17,7 @@ import (
 type TtSaveMoney struct {
 	Id          int
 	UserId      int
-	GroupId int
+	GroupId     int
 	Money       float64
 	Gold        float64
 	State       int

@@ -4,19 +4,19 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/Admin/CacheData"
+	"github.com/TtMyth123/Admin/GConfig"
+	"github.com/TtMyth123/Admin/GInstance"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	userConst "github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/httpKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/Admin/CacheData"
-	"ttmyth123/GroupLottery/Admin/GConfig"
-	"ttmyth123/GroupLottery/Admin/GInstance"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	userConst "ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/httpKit"
-	"ttmyth123/kit/ttLog"
 
-	"ttmyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/sqlKit"
 )
 
 func getSaveDrawApplyInfoKey() string {
@@ -280,14 +280,14 @@ tt_save_money a, tt_game_user b where a.user_id=b.id %s `,
 */
 func SaveMoney(GroupId, UserId, Money, AuditorId int, AuditorName string) error {
 	o := orm.NewOrm()
-	aTtSaveMoney := models.TtSaveMoney{GroupId:GroupId, UserId: UserId, Money: float64(Money), Gold: float64(Money), State: mconst.SaveMoneyState_5_OK,
+	aTtSaveMoney := models.TtSaveMoney{GroupId: GroupId, UserId: UserId, Money: float64(Money), Gold: float64(Money), State: mconst.SaveMoneyState_5_OK,
 		VoucherUrl: "", PayState: 0, AuditorId: AuditorId, AuditorName: AuditorName}
 	e := aTtSaveMoney.Add(o)
 	if e != nil {
 		return e
 	}
 
-	goldInfo := gBox.AddGoldInfo{GroupId:GroupId, UserId: UserId, Gold: float64(Money), T: userConst.Account_08_AddMoney,
+	goldInfo := gBox.AddGoldInfo{GroupId: GroupId, UserId: UserId, Gold: float64(Money), T: userConst.Account_08_AddMoney,
 		Des:  fmt.Sprintf("[%s]上分%d。", AuditorName, Money),
 		Des2: fmt.Sprintf("[%s]Nạp điểm%d。", AuditorName, Money),
 	}

@@ -1,16 +1,16 @@
 package GInstance
 
 import (
+	"github.com/TtMyth123/GameServer/LotteryResult"
+	"github.com/TtMyth123/GameServer/LotteryResult/Game28ResultServer"
+	"github.com/TtMyth123/GameServer/LotteryResult/UscResultServer"
+	"github.com/TtMyth123/GameServer/LotteryServer"
+	"github.com/TtMyth123/GameServer/LotteryServer/Game28Server"
+	"github.com/TtMyth123/GameServer/LotteryServer/UscServer"
+	"github.com/TtMyth123/GameServer/LotteryServer/WsxServer"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/UserRpcClient"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/Game28ResultServer"
-	"ttmyth123/GroupLottery/GameServer/LotteryResult/UscResultServer"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer/Game28Server"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer/UscServer"
-	"ttmyth123/GroupLottery/GameServer/LotteryServer/WsxServer"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/UserRpcClient"
 )
 
 var (

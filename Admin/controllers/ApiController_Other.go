@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"ttmyth123/GroupLottery/Admin/controllers/base/enums"
-	"ttmyth123/kit"
+	"github.com/TtMyth123/Admin/controllers/base/enums"
+	"github.com/TtMyth123/kit"
 )
 
 func (c *ApiController) GetGuid() {

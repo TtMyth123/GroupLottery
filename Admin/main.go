@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/TtMyth123/Admin/routers"
+	"github.com/TtMyth123/Admin/sysInit"
 	"github.com/astaxie/beego/plugins/cors"
-	"ttmyth123/GroupLottery/Admin/routers"
-	"ttmyth123/GroupLottery/Admin/sysInit"
 
 	"github.com/astaxie/beego"
 )

@@ -2,14 +2,14 @@ package base
 
 import (
 	"encoding/json"
+	"github.com/TtMyth123/Staff/CacheData"
+	"github.com/TtMyth123/Staff/controllers/base/box"
+	"github.com/TtMyth123/Staff/controllers/base/enums"
+	"github.com/TtMyth123/kit"
+	"github.com/TtMyth123/kit/TtErrors"
+	"github.com/TtMyth123/kit/stringKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego"
-	"ttmyth123/GroupLottery/Staff/CacheData"
-	"ttmyth123/GroupLottery/Staff/controllers/base/box"
-	"ttmyth123/GroupLottery/Staff/controllers/base/enums"
-	"ttmyth123/kit"
-	"ttmyth123/kit/TtErrors"
-	"ttmyth123/kit/stringKit"
-	"ttmyth123/kit/ttLog"
 )
 
 type ABaseController struct {

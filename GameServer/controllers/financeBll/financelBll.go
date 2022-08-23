@@ -4,22 +4,22 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/TtMyth123/GameServer/CacheData"
+	"github.com/TtMyth123/GameServer/GConfig"
+	"github.com/TtMyth123/GameServer/GInstance"
+	"github.com/TtMyth123/GameServer/GInstance/GTtHint"
+	"github.com/TtMyth123/GameServer/controllers/base/TtError"
+	"github.com/TtMyth123/GameServer/models"
+	"github.com/TtMyth123/GameServer/models/mconst"
+	"github.com/TtMyth123/UserInfoRpc/GData/gBox"
+	userConst "github.com/TtMyth123/UserInfoRpc/models/mconst"
+	"github.com/TtMyth123/kit/httpKit"
+	"github.com/TtMyth123/kit/pwdKit"
+	"github.com/TtMyth123/kit/sqlKit"
+	"github.com/TtMyth123/kit/timeKit"
+	"github.com/TtMyth123/kit/ttLog"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/GameServer/CacheData"
-	"ttmyth123/GroupLottery/GameServer/GConfig"
-	"ttmyth123/GroupLottery/GameServer/GInstance"
-	"ttmyth123/GroupLottery/GameServer/GInstance/GTtHint"
-	"ttmyth123/GroupLottery/GameServer/controllers/base/TtError"
-	"ttmyth123/GroupLottery/GameServer/models"
-	"ttmyth123/GroupLottery/GameServer/models/mconst"
-	"ttmyth123/GroupLottery/UserInfoRpc/GData/gBox"
-	userConst "ttmyth123/GroupLottery/UserInfoRpc/models/mconst"
-	"ttmyth123/kit/httpKit"
-	"ttmyth123/kit/pwdKit"
-	"ttmyth123/kit/sqlKit"
-	"ttmyth123/kit/timeKit"
-	"ttmyth123/kit/ttLog"
 )
 
 func SaveMoneyApply(userId int, Gold float64) (int, error) {
@@ -151,7 +151,7 @@ func DrawMoneyApply(GroupId, userId int, Gold float64, Pwd string) error {
 		}
 	}
 
-	aGoldInfo := gBox.AddGoldInfo{GroupId:GroupId, UserId: userId, Gold: Gold, T: userConst.Account_04_DrawMoney,
+	aGoldInfo := gBox.AddGoldInfo{GroupId: GroupId, UserId: userId, Gold: Gold, T: userConst.Account_04_DrawMoney,
 		Des:  fmt.Sprintf("提现申请扣除：%g。", Gold),
 		Des2: GTtHint.GetTtHint().GetHint("提现申请扣除：%g。"), DesMp: GTtHint.GetTtHint().GetMpString(Gold)}
 	_, e = GInstance.GetUserRpcClient().AddGold(aGoldInfo)
@@ -161,7 +161,7 @@ func DrawMoneyApply(GroupId, userId int, Gold float64, Pwd string) error {
 		return e
 	}
 	curT := time.Now()
-	aYhDrawMoney := models.TtDrawMoney{GroupId:GroupId, UserId: userId, Gold: Gold, State: mconst.DrawMoneyState_1_Apply,
+	aYhDrawMoney := models.TtDrawMoney{GroupId: GroupId, UserId: userId, Gold: Gold, State: mconst.DrawMoneyState_1_Apply,
 		AuditorId: 0, AuditorName: "", CreatedAt: curT, UpdatedAt: curT}
 	e = aYhDrawMoney.Add(o)
 	if e != nil {
@@ -213,7 +213,7 @@ func DelDrawMoney(drawMoneyId, userId int) error {
 	if aTtDrawMoney.State != mconst.DrawMoneyState_1_Apply {
 		return errors.New(GTtHint.GetTtHint().GetHint("数据更新，请刷新后重试。"))
 	}
-	aGoldInfo := gBox.AddGoldInfo{GroupId:aTtDrawMoney.GroupId, UserId: aTtDrawMoney.UserId, Gold: aTtDrawMoney.Gold,
+	aGoldInfo := gBox.AddGoldInfo{GroupId: aTtDrawMoney.GroupId, UserId: aTtDrawMoney.UserId, Gold: aTtDrawMoney.Gold,
 		T:    userConst.Account_07_DrawMoneyR,
 		Des:  fmt.Sprintf("提现拒绝%0.2f", aTtDrawMoney.Gold),
 		Des2: fmt.Sprintf("Rút điểm bị từ chối%0.2f", aTtDrawMoney.Gold),
@@ -465,14 +465,14 @@ func SaveMoney(UserId int, Money float64, AuditorId int, AuditorName string) err
 */
 func DrawMoney(GroupId, UserId int, Money float64, AuditorId int, AuditorName string) error {
 	o := orm.NewOrm()
-	aTtDrawMoney := models.TtDrawMoney{GroupId:GroupId,UserId: UserId, Gold: Money, State: mconst.DrawMoneyState_4,
+	aTtDrawMoney := models.TtDrawMoney{GroupId: GroupId, UserId: UserId, Gold: Money, State: mconst.DrawMoneyState_4,
 		AuditorId: AuditorId, AuditorName: AuditorName}
 	e := aTtDrawMoney.Add(o)
 	if e != nil {
 		return e
 	}
 
-	goldInfo := gBox.AddGoldInfo{GroupId:GroupId,UserId: UserId, Gold: Money, T: userConst.Account_09_DecMoney,
+	goldInfo := gBox.AddGoldInfo{GroupId: GroupId, UserId: UserId, Gold: Money, T: userConst.Account_09_DecMoney,
 		Des:  fmt.Sprintf("[%s]下分%g。", AuditorName, Money),
 		Des2: fmt.Sprintf("[%s]Rút điểm%g。", AuditorName, Money),
 	}
@@ -501,14 +501,14 @@ func DrawMoneying(GroupId, UserId int, Score, Money float64, State int, OrderId 
 			return errors.New("金额不能小于或等于0")
 		}
 
-		aTtDrawMoney := models.TtDrawMoney{GroupId:GroupId, UserId: UserId, Gold: Score, Money: Money, State: mconst.DrawMoneyState_2,
+		aTtDrawMoney := models.TtDrawMoney{GroupId: GroupId, UserId: UserId, Gold: Score, Money: Money, State: mconst.DrawMoneyState_2,
 			AuditorId: 0, AuditorName: "", OrderId: OrderId}
 		e = aTtDrawMoney.Add(o)
 		if e != nil {
 			return e
 		}
 
-		goldInfo := gBox.AddGoldInfo{GroupId:GroupId, UserId: UserId, Gold: Score, T: userConst.Account_09_DecMoney,
+		goldInfo := gBox.AddGoldInfo{GroupId: GroupId, UserId: UserId, Gold: Score, T: userConst.Account_09_DecMoney,
 			Des:  fmt.Sprintf("[%s]下分%g。", "", Score),
 			Des2: fmt.Sprintf("[%s]Rút điểm%g。", "", Score),
 		}
@@ -533,7 +533,7 @@ func DrawMoneying(GroupId, UserId int, Score, Money float64, State int, OrderId 
 			return errors.New("数据不唯一。")
 		}
 
-		aGoldInfo := gBox.AddGoldInfo{GroupId:GroupId,UserId: arr[0].UserId, Gold: arr[0].Gold,
+		aGoldInfo := gBox.AddGoldInfo{GroupId: GroupId, UserId: arr[0].UserId, Gold: arr[0].Gold,
 			T:    userConst.Account_07_DrawMoneyR,
 			Des:  fmt.Sprintf("提现拒绝%0.2f", arr[0].Gold),
 			Des2: fmt.Sprintf("Rút điểm bị từ chối%0.2f", arr[0].Gold),

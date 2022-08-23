@@ -1,9 +1,9 @@
 package models
 
 import (
+	"github.com/TtMyth123/Staff/models/mconst"
 	"github.com/astaxie/beego/orm"
 	"time"
-	"ttmyth123/GroupLottery/Staff/models/mconst"
 )
 
 type TtReplyMain struct {
