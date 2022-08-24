@@ -154,20 +154,19 @@ func (this *Bj28ResultServer) saveAwardInfo() {
 		aLoAwardInfo.CurLotteryTime, e = timeKit.GetTime(aAwardInfo.Opentime)
 
 		if e != nil {
-			ttLog.LogError(e, "开奖时间有问题:", aAwardInfo.Opentime)
+			ttLog.LogError(e, "Bj28ResultServer a 开奖时间有问题:", aAwardInfo.Opentime)
 			return
 		}
 
 		aLoAwardInfo.NextLotteryTime, e = timeKit.GetTime(aAwardInfo.NextTime)
 		//aLoAwardInfo.NextLotteryTime,e = this.GetNextTime()
 		if e != nil {
-			ttLog.LogError(e, "Bj28ResultServer开奖时间有问题:", stringKit.GetJsonStr(aAwardInfo))
+			ttLog.LogError(e, "Bj28ResultServer b 开奖时间有问题:", stringKit.GetJsonStr(aAwardInfo))
 			return
 		}
 
 		this.CurOpenCodeInfo = aAwardInfo
-		ttLog.LogDebug("Bj28ResultServer 开奖信息：", stringKit.GetJsonStr(aAwardInfo))
-
+		ttLog.LogDebug("Bj28ResultServer c 开奖信息：", stringKit.GetJsonStr(aAwardInfo))
 		if this.mHandlerAwardInfoFunc != nil {
 			go this.mHandlerAwardInfoFunc(aLoAwardInfo)
 		}
@@ -188,7 +187,7 @@ func (this *Bj28ResultServer) getAwardInfo() (interface{}, error) {
 	}
 	if len(aJnd28Result.Opencode) < 3 {
 		ttLog.LogError(e, "strJson:", string(resurl))
-		return nil, e
+		return nil, fmt.Errorf("")
 	}
 
 	return aJnd28Result, nil
