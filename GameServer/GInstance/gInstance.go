@@ -51,6 +51,7 @@ func initLotteryServer() {
 
 	if isRun, _ := beego.AppConfig.Bool("Game28::JndIsRun"); isRun {
 		Game28ServerJnd := Game28Server.NewGame28Server(mconst.GameType_G28_041, 10, mUserRpcClient)
+		Game28ServerJnd.MaxCountdown = 130
 
 		url := beego.AppConfig.String("Game28::ResultHttpUrlJnd")
 		Game28ResultServer.NewJnd28ResultServer(url, Game28ServerJnd.NewAwardInfo)

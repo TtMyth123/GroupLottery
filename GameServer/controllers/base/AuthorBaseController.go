@@ -18,7 +18,7 @@ type AuthorBaseController struct {
 }
 
 func (this *AuthorBaseController) Prepare() {
-	return
+	//return
 	strToken := this.Ctx.Input.Header("token")
 	JWTClaims, err := this.verifyAction(strToken)
 	if err != nil {

@@ -119,7 +119,7 @@ func (this *Jnd28ResultServer) GetNextTime(openT time.Time, rt int) (time.Time, 
 			if e == nil {
 				iSub := newT.Sub(t) / time.Second
 				if iSub < 6 {
-					return newT, errors.New(GTtHint.GetTtHint().GetHint("无效的时间数据2"))
+					return newT, errors.New(GTtHint.GetTtHint().GetHint("无效的时间数据"))
 				}
 			}
 			this.pStrTime = ss
@@ -221,7 +221,7 @@ func (this *Jnd28ResultServer) saveAwardInfo(aAwardInfoData interface{}) {
 
 	aAwardInfo := aAwardInfoData.(ResultBox.Game28Result)
 	if this.CurOpenCodeInfo.NextIssue < aAwardInfo.NextIssue {
-		ttLog.LogDebug("Jnd28ResultServer__saveAwardInfo:", aAwardInfo.Expect, aAwardInfo.Opentime, aAwardInfo.Opencode)
+		//ttLog.LogDebug("Jnd28ResultServer__saveAwardInfo:", aAwardInfo.Expect, aAwardInfo.Opentime, aAwardInfo.Opencode)
 
 		aLoAwardInfo := models.LoAwardInfo{}
 		var e error
@@ -233,19 +233,19 @@ func (this *Jnd28ResultServer) saveAwardInfo(aAwardInfoData interface{}) {
 		aLoAwardInfo.CurLotteryTime, e = timeKit.GetTime(aAwardInfo.Opentime)
 
 		if e != nil {
-			ttLog.LogError(e, "开奖时间有问题:", aAwardInfo.Opentime)
+			ttLog.LogError(e, "Jnd28ResultServer a 开奖时间有问题:", aAwardInfo.Opentime)
 			return
 		}
 
 		//aLoAwardInfo.NextLotteryTime,e = timeKit.GetTime(aAwardInfo.NextTime)
 		aLoAwardInfo.NextLotteryTime, e = this.GetNextTime(aLoAwardInfo.CurLotteryTime, aAwardInfo.R)
 		if e != nil {
-			ttLog.LogError(e, "Jnd28ResultServer 开奖时间有问题:", stringKit.GetJsonStr(aAwardInfo))
+			ttLog.LogError(e, "Jnd28ResultServer b 开奖时间有问题:", stringKit.GetJsonStr(aAwardInfo))
 			return
 		}
 
 		this.CurOpenCodeInfo = aAwardInfo
-		ttLog.LogDebug("Jnd28ResultServer 开奖信息：", stringKit.GetJsonStr(aAwardInfo))
+		ttLog.LogDebug("Jnd28ResultServer c 开奖信息：", stringKit.GetJsonStr(aAwardInfo))
 		if this.mHandlerAwardInfoFunc != nil {
 			go this.mHandlerAwardInfoFunc(aLoAwardInfo)
 		}

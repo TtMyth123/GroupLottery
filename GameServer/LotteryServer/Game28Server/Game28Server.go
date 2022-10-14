@@ -51,6 +51,7 @@ type Game28Server struct {
 
 	sendStopBetStateP string
 	StopBetHint       string
+	MaxCountdown      int
 }
 
 func NewGame28Server(gameType, StopBetTime int, UserRpcClient *UserRpcClient.RpcClient) *Game28Server {
@@ -187,6 +188,9 @@ func (this *Game28Server) NewAwardInfo(newLoAwardInfo models.LoAwardInfo) {
 	this.sendStopBetStateP = ""
 
 	this.curGame28AwardInfo = Game28ResultKit.GetGame28AwardInfo(newLoAwardInfo, this.StopBetTime, 1)
+	if this.MaxCountdown > 0 && this.curGame28AwardInfo.Countdown > this.MaxCountdown {
+		this.curGame28AwardInfo.Countdown = this.MaxCountdown
+	}
 
 	if this.curGame28AwardInfo.Countdown < 30 {
 		ttLog.LogDebug("CountdownCountdownCountdown:", stringKit.GetJsonStr(this.curGame28AwardInfo))
